@@ -1,0 +1,15 @@
+
+
+:root{
+
+    --main-color:rgb(21, 21, 204);
+
+
+
+}
+
+.wrapper{
+
+    color: var(--main-color);
+
+}
