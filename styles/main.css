@@ -1,15 +1,36 @@
-
+/* the main colors for the website */
 
 :root{
 
-    --main-color:rgb(21, 21, 204);
-
+    --main-bg-color:#180A0A;
+    --background-color:#711A75; 
+    --main-text-color:#F10086;
+    --small-text-color:#F582A7;
 
 
 }
-
+@media (prefers-color-scheme: dark){
+    
+}
 .wrapper{
 
-    color: var(--main-color);
+    background-color: var(--background-color);
+    
+}
 
+.topbar {
+
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--main-text-color);
+
+    margin: auto;
+}
+
+a,a:active {
+    
 }
