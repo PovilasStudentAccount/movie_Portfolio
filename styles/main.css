@@ -1,11 +1,18 @@
+*{
+    margin:0px;
+padding:0px;
+
+
+}
+
 /* the main colors for the website */
 
 :root{
 
-    --main-bg-color:#180A0A;
-    --element-color:#711A75; 
-    --main-text-color:#F10086;
-    --small-text-color:#F582A7;
+    --main-bg-color:#22577A;
+    --element-color:#38A3A5; 
+    --main-text-color:#57CC99;
+    --small-text-color:#80ED99;
 
 
 }
@@ -25,7 +32,7 @@
     background-color: var(--main-bg-color);
     
 }
-
+/**/
 .topbar {
 
     
@@ -46,6 +53,7 @@
 
 }
 .topbarTab{
+    color: var(--main-text-color);
 display: flex;
 flex-direction: row ;
 margin: auto;
@@ -61,18 +69,21 @@ a,a:active {
 
 /* Slideshow style */
 .slider {
-    width: 500px;
+    width: 31.25rem;
     height: 300px;
-    background-color: yellow;
+    background-color: var(--main-bg-color);
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
     text-align: center;
     overflow: hidden;
   }
+
+  /* This is the container for the slideshow, it needs to have enough width equal to all images width combined for it to function*/
+
   .image-container {
-    width: 1500px;
-    background-color: pink;
+    width: 93.75rem;
+    background-color: var(--small-text-color);
     height: 300px;
     clear: both;
     position: relative;
@@ -88,22 +99,22 @@ a,a:active {
     position: relative;
   }
   #slide-1:target ~ .image-container {
-    left: 0px;
+    left: 0rem;
   }
   #slide-2:target ~ .image-container {
-    left: -500px;
+    left: -31.25rem;
   }
   #slide-3:target ~ .image-container {
-    left: -1000px;
+    left: -62.5rem;
   }
   .buttons {
     position: relative;
-    top: -20px;
+    top: -1.4rem;
   }
   .buttons a {
     display: inline-block;
     height: 15px;
     width: 15px;
     border-radius: 50px;
-    background-color: lightgreen;
+    background-color: var(--element-color);
   }
