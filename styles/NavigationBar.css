@@ -1,0 +1,28 @@
+.topbar {
+
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+
+    top: 0;
+    justify-content: left;
+    align-items: space-between;
+    width: auto;
+    overflow: hidden;
+    background-color: var(--element-color);
+
+
+    margin: auto;
+    padding: 1rem;
+
+}
+.topbarTab{
+    color: var(--main-text-color);
+display: flex;
+flex-direction: row ;
+margin: auto;
+padding: 10px;
+justify-content: center;
+align-items: center;
+}
