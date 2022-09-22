@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Holds the document defualt settings, as well as title-->
+    <!-- Holds the document default settings, as well as title-->
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,12 +13,12 @@
   </head>
   <body>
     <div class="wrapper">
-      <div id="preloader">
-        <!-- preloader for the page (coming soon™) -->
-      </div>
 
+      <!-- preloader-->
+      <div id="preloader"></div>
+
+      <!-- The top menu which follows you when scrolling vertically-->
       <menu class="topbar">
-        <!-- The top menu which follows you when scrolling vertically-->
 
         <a class="topbarTab" href="./index.html">Movies</a>
         <a class="topbarTab" href="./pages/prod.html"
@@ -29,8 +29,9 @@
         >
       </menu>
 
+      <!-- Here is where the slideshow is-->
       <header>
-        <!-- Here is where the slideshow is-->
+
         <div class="slider">
           <span id="slide-1"></span>
           <span id="slide-2"></span>
@@ -60,6 +61,7 @@
             <a href="#slide-2"></a>
             <a href="#slide-3"></a>
           </div>
+
         </div>
         <br />
         
@@ -86,13 +88,15 @@
         </section>
  
       </main>
+
       <footer>
-        <!-- Text -->
+        <!-- Footer Text -->
       </footer>
+
     </div>
   </body>
 
-  <script src="./scripts/index.js"></script>
+  <script src="./scripts/preloader.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   </html>
