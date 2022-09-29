@@ -42,61 +42,10 @@ align-items: center;
 }
 
 /* Links */
-a,a:active {
+a,a:active,p {
     color: var(--small-text-color);
 }
 
-/* Slideshow style */
-.slider {
-    width: 300px;
-    height: 450px;
-    background-color: var(--main-bg-color);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    text-align: center;
-    overflow: hidden;
-  }
-
-  /* This is the container for the slideshow, it needs to have enough width equal to all images width combined for it to function*/
-
-  .image-container {
-    width: 900px;
-    background-color: var(--small-text-color);
-    height: 450px;
-    clear: both;
-    position: relative;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -o-transition: left 2s;
-    transition: left 2s;
-  }
-  .slide {
-    float: left;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-  }
-  #slide-1:target ~ .image-container {
-    left: 0rem;
-  }
-  #slide-2:target ~ .image-container {
-    left: -18.75rem;
-  }
-  #slide-3:target ~ .image-container {
-    left: -37.5rem;
-  }
-  .buttons {
-    position: relative;
-    top: -1.4rem;
-  }
-  .buttons a {
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-    border-radius: 50px;
-    background-color: var(--element-color);
-  }
 /*Sliders*/
 #main-slider{
 display: flex;
@@ -128,23 +77,6 @@ width: 100%;
 
 }
 
-/* preloader */
-#preloader{
-  background: #000;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-}
-
-.CreditNImg {
-  padding: 2px;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  flex-direction: column;
-  align-items: center;
-}
 .leftCredit,.rightCredit{
   padding: 10px;
   flex-grow: 1;
