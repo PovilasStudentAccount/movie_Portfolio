@@ -5,45 +5,35 @@ padding:0px;
 
 /* the main colors for the website */
 
+:root{
+
+  --main-bg-color:#251D3A;
+  --element-color:#2A2550; 
+  --main-text-color:#E04D01;
+  --small-text-color:#FF7700;
+
+
+}
+@media (prefers-color-scheme: dark){
+
+:root{
+
+  --main-bg-color:#180A0A;
+  --element-color:#711A75; 
+  --main-text-color:#990054;
+  --small-text-color:#693747;
+
+}
+}
 
 .wrapper{
     
     background-color: var(--main-bg-color);
     
 }
-/* The top menu code */
-.topbar {
 
-    z-index: 3;
-    display: flex;
-    flex-wrap: wrap;
-    position: sticky;
-
-    top: 0;
-    justify-content: left;
-    align-items: space-between;
-    width: auto;
-    overflow: hidden;
-    background-color: var(--element-color);
-
-
-    margin: auto;
-    padding: 1rem;
-
-}
-.topbarTab{
-    color: var(--main-text-color);
-display: flex;
-flex-direction: row ;
-margin: auto;
-padding: 10px;
-justify-content: center;
-align-items: center;
-}
-
-/* Links */
-a,a:active,p {
-    color: var(--small-text-color);
+p,h1,h2,h3 {
+  color: var(--main-text-color);
 }
 
 /*Sliders*/

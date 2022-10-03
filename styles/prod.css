@@ -2,3 +2,9 @@
     margin: 0px;
     padding:0px;
 }
+
+.wrapper{
+    
+    background-color: var(--main-bg-color);
+    
+}
