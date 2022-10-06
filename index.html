@@ -7,17 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>movieTime</title>
+    <link rel="stylesheet" href="styles/root.css">
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/NavigationBar.css" />
     <link rel="stylesheet" href="styles/preloader.css" />
     <link rel="stylesheet" href="styles/slick.css" />
     <!--slick carousel slider-->
-    <
+    
     <link
       rel="stylesheet"
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
   </head>
   <body>
     <div class="wrapper">
@@ -60,7 +63,23 @@
         </div>
         <br>
 
-        <iframe
+        
+      </header>
+      
+      <!-- Latest work showcase -->
+
+      <div id="latest">
+        <div id="orange-span"></div>
+        
+        <div class="latest-show">
+          <div id="latest-text">
+            <p id="latest-title">Michael Myers hits the griddy</p>
+
+            <p id="latest-desc">That is awesome</p>
+          </div>
+
+          <div id="latest-video">        
+          <iframe
           width="560"
           height="315"
           src="https://www.youtube.com/embed/yvpwKc8Ojqs"
@@ -68,8 +87,11 @@
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
-        ></iframe>
-      </header>
+          ></iframe>
+          </div>
+        </div>
+      </div>
+      
       <main>
         <!-- A portfolio of movies is in this part-->
         <!-- Movie slider -->
