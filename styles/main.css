@@ -75,13 +75,21 @@ img {
 }
 
 #latest-text{
-  border-style: solid;
-  border-color: yellow;
+  display: flex;
   flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #latest-title{
+  font-size:3.5rem;
+  margin-top: -6rem;
+}
 
+#latest-desc{
+  margin-top: 4rem;
+  font-size: 1.5rem;
 }
 
 #latest-video{
