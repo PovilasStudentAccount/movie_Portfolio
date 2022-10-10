@@ -20,3 +20,12 @@
   
   }
   }
+
+  @font-face {
+    font-family: 'mighaexpanded';
+    src: url('../fonts/mighaexpanded-yzgjy-webfont.woff2') format('woff2'),
+         url('../fonts/mighaexpanded-yzgjy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
