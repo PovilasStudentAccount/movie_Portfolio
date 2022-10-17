@@ -41,6 +41,8 @@ p {
   z-index: 100;
 }
 
+
+/* This code seperates text and image using flex box */
 .CreditNImg {
 
   display: flex;
@@ -59,3 +61,5 @@ p {
 
 
 }
+
+
