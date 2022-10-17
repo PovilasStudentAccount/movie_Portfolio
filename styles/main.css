@@ -51,13 +51,6 @@ img {
 }
 /* End of slider */
 
-/* idk */
-.leftCredit,.rightCredit{
-  padding: 10px;
-  flex-grow: 1;
-  color: var(--text-color1);
-}
-
 /* Showcase for latest work */
 
 .latest{
