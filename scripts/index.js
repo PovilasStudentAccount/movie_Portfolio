@@ -5,6 +5,7 @@
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    draggable: false,
     responsive: [
       {
         breakpoint: 1024,
