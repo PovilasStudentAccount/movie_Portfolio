@@ -45,9 +45,9 @@ p {
 
   display: flex;
   overflow: hidden;
-  margin:auto;
+  margin: auto;
   align-items: center;
-  max-width: 40rem;
+  max-width: 80rem;
   align-content: space-between
 }
 .left,.right {
@@ -55,7 +55,7 @@ p {
     padding: 2rem;
 
     flex-grow: 1;
-
+    flex: 50%;
 
 
 }
