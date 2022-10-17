@@ -17,7 +17,7 @@
     padding: 1rem;
 
 }
-.topbarTab{
+.topbarLink{
     color: var(--small-text-color);
 display: flex;
 flex-direction: row ;
