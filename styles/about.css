@@ -44,7 +44,7 @@ p {
 
 /* This code seperates text and image using flex box */
 .CreditNImg {
-
+    font-size: 2rem;
   display: flex;
   overflow: hidden;
   margin: auto;
@@ -61,5 +61,21 @@ p {
 
 
 }
+.textContainer {
+    
+    font-size: 2rem;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: auto;
+    padding: 4rem;
+
+
+    padding-top: 7.5rem; 
+    padding-bottom: 7.5rem;
+
+}
 
