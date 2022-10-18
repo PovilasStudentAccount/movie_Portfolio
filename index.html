@@ -1,118 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Holds the document default settings, as well as title-->
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>movieTime</title>
-    <link rel="stylesheet" href="styles/root.css">
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/topAndBottom.css" />
-    <link rel="stylesheet" href="styles/preloader.css" />
-    <link rel="stylesheet" href="styles/slick.css" />
-    
-    <!--slick carousel slider-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<head>
+  <!-- Holds the document default settings, as well as title-->
 
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- preloader-->
-      <div id="preloader"></div>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>movieTime</title>
+  <link rel="stylesheet" href="styles/root.css">
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/topAndBottom.css" />
+  <link rel="stylesheet" href="styles/preloader.css" />
+  <link rel="stylesheet" href="styles/slick.css" />
 
-      <!-- The top menu which follows you when scrolling vertically-->
-      <menu class="topbar">
-        <header>
-          <h1>Pile of Ideas</h1>
-        </header>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-        <a class="topbarLink" href="./index.html">Movies</a>
-        <a class="topbarLink" href="./pages/prod.html">Production</a>
-        <a class="topbarLink" href="./pages/about.html">About Us</a>
-      </menu>
 
-      <!-- Here is where the slideshow is-->
+  <!--slick carousel slider-->
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- preloader-->
+    <div id="preloader"></div>
+
+    <!-- The top menu which follows you when scrolling vertically-->
+    <menu class="topbar">
       <header>
-        <div class="slick-slider">
-          <div>
-            <img
-              src="./images/mMyers.jpg"
-              class="slide"
-            />
-          </div>
-
-          <div>
-            <img
-              src="./images/mMyersCloseUp.jpeg"
-              class="slide"
-            />
-          </div>
-          <div>
-            <img
-              src="./images/halloweenMovie.jpg"
-              class="slide"
-            />
-          </div>
-        </div>
-        <br>
-
-        
+        <h1>Pile of Ideas</h1>
       </header>
-      
-      <!-- Latest work showcase -->
 
-      <div class="latest">
-        <div id="orange-span"></div>
-        
-        <div class="latest-show">
-          <div id="latest-text">
-            <p id="latest-title">Michael Myers hits the griddy</p>
+      <a class="topbarLink" href="./index.html">Movies</a>
+      <a class="topbarLink" href="./pages/prod.html">Production</a>
+      <a class="topbarLink" href="./pages/about.html">About Us</a>
+    </menu>
 
-            <p id="latest-desc">That is awesome</p>
+    <!-- Here is where the slideshow is-->
+
+    <header>
+      <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./images/mMyers.jpg" /></div>
+            <div class="swiper-slide"><img src="./images/mMyersCloseUp.jpeg" /></div>
+            <div class="swiper-slide"><img src="./images/halloweenMovie.jpg" /></div>
+            <div class="swiper-slide"><img src="./images/halloweenMovie.jpg" /></div>
+
           </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
-          <div id="latest-video">        
-          <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/yvpwKc8Ojqs"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          ></iframe>
-          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+
         </div>
       </div>
-      
-     
 
-      <footer>
-        <!-- Footer Text -->
 
-        <h1>You can never succeed if you never try</h1>
-      </footer>
+
+      <div class="slick-slider">
+        <div>
+          <img src="./images/mMyers.jpg" class="slide" />
+        </div>
+
+        <div>
+          <img src="./images/mMyersCloseUp.jpeg" class="slide" />
+        </div>
+        <div>
+          <img src="./images/halloweenMovie.jpg" class="slide" />
+        </div>
+      </div>
+      <br>
+
+
+    </header>
+
+    <!-- Latest work showcase -->
+
+    <div class="latest">
+      <div id="orange-span"></div>
+
+      <div class="latest-show">
+        <div id="latest-text">
+          <p id="latest-title">Michael Myers hits the griddy</p>
+
+          <p id="latest-desc">That is awesome</p>
+        </div>
+
+        <div id="latest-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/yvpwKc8Ojqs" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
-  </body>
 
-  <script src="./scripts/preloader.js"></script>
 
-  <!--jquery with slick carousel script-->
-  <script
-  src="https://code.jquery.com/jquery-3.6.1.js"
-  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+
+    <footer>
+      <!-- Footer Text -->
+
+      <h1>You can never succeed if you never try</h1>
+    </footer>
+  </div>
+</body>
+
+<script src="./scripts/preloader.js"></script>
+
+<!--jquery with slick carousel script-->
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
   crossorigin="anonymous"></script>
-  <script
-    type="text/javascript"
-    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-  ></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-  <script src="./scripts/index.js"></script>
+<script src="./scripts/index.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper('.swiper', {
+
+loop: true,
+
+// If we need pagination
+pagination: {
+  el: '.swiper-pagination',
+},
+
+// Navigation arrows
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+
+});
+
+</script>
 </html>
