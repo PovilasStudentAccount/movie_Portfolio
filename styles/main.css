@@ -107,13 +107,13 @@ justify-content: center;
 }
 
 #latest-title{
-  font-size:3.5rem;
   margin-top: -6rem;
+  font-size:3.5rem;
 }
 
 #latest-desc{
   margin-top: 4rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 #latest-video{

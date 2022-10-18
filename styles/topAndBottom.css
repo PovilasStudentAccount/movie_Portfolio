@@ -19,7 +19,7 @@
 
 }
 .topbarLink{
-    color: var(--small-text-color);
+color: var(--small-text-color);
 display: flex;
 flex-direction: row ;
 margin: auto;
