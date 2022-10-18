@@ -28,3 +28,41 @@ h1 {
 p {
     color: var(--small-text-color)
 }
+
+/* This code seperates text and image using flex box */
+.CreditNImg {
+    font-size: 2rem;
+  display: flex;
+  overflow: hidden;
+  margin: auto;
+  align-items: center;
+  max-width: 80rem;
+  align-content: space-between
+}
+.left,.right {
+
+    padding: 2rem;
+
+    flex-grow: 1;
+    flex: 50%;
+
+
+}
+.textContainer {
+    
+    font-size: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: auto;
+    padding: 4rem;
+
+
+    padding-top: 7.5rem; 
+    padding-bottom: 7.5rem;
+
+}
+
