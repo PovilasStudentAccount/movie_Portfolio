@@ -1,8 +1,60 @@
+*{
+  box-sizing: border-box;
+}
+
 /* preloader itself*/
 #preloader{
     background: #000;
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 10;
   }
+
+.spinner-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+.spinner-container > div {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.spinner {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(90deg, #009fff, #ec2f4b);
+    
+  }
+  
+@keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+/*Spinner*/
+#spinner4 {
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 2s linear infinite;
+  
+}
+
+#spinner4::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: black;
+}
