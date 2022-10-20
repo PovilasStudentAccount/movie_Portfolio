@@ -43,7 +43,11 @@ justify-content: center;
   width: 100%;
 }
 
+.swiper-button-next, .swiper-button-prev{
 
+  color: var(--main-text-color);
+
+}
 
 
 
