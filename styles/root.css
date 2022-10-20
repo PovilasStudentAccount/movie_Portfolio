@@ -2,21 +2,21 @@
 
 :root{
 
-    --main-bg-color:#251D3A;
-    --element-color:#2A2550; 
-    --main-text-color:#E04D01;
-    --small-text-color:#FF7700;
+  --main-bg-color: rgb(19, 0, 85);
+  --element-color: rgb(6, 72, 103); 
+  --main-text-color:#9dc3ff; ;
+  --small-text-color: #ffffff; 
   
   }
   
   @media (prefers-color-scheme: dark){
   
   :root{
-  
-    --main-bg-color:#251D3A;
-    --element-color:#2A2550; 
-    --main-text-color:#E04D01;
-    --small-text-color:#FF7700;
+
+    --main-bg-color: rgb(24, 11, 72);
+    --element-color: rgb(54, 41, 100); 
+    --main-text-color:#29899e; ;
+    --small-text-color: #becde4; 
   
   }
   }

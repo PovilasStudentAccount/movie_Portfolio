@@ -43,9 +43,14 @@ justify-content: center;
   width: 100%;
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper .swiper-button-next, .swiper .swiper-button-prev{
 
   color: var(--main-text-color);
+
+}
+.swiper .swiper-pagination-bullet-active{
+
+  background: var(--main-text-color);
 
 }
 
