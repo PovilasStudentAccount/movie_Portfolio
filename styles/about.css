@@ -18,7 +18,11 @@ padding:0px;
     
 }
 
+.wallpaper {
 
+    background-color: var(--main-bg-color);
+    background-image: url("https://transparenttextures.com/patterns/batthern.png");
+}
 /* Links */
 a,a:active {
     color: var(--small-text-color);
@@ -74,6 +78,7 @@ h1 {
 
     padding-top: 7.5rem; 
     padding-bottom: 7.5rem;
+
 
 }
 
