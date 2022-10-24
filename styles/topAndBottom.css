@@ -55,5 +55,17 @@ a {
     transform: scaleX(1);
   }
 
+  .bottomText{
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: var(--small-text-color);
+
+    background-color: black;
+    padding: 2rem;
+
+  }
 
   /* Footer */

@@ -12,9 +12,7 @@ h1 {
   font-family: 'mighaexpanded';
 }
 
-p,h1,h2,h3 {
-  color: var(--main-text-color);
-}
+
 
 img {
   width: 50vw;

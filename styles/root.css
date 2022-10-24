@@ -21,6 +21,13 @@
   }
   }
 
+  h1,h2,h3 {
+    color: var(--main-text-color);
+  }
+  p {
+    color: var(--small-text-color);
+  }
+
   @font-face {
     font-family: 'mighaexpanded';
     src: url('../fonts/mighaexpanded-yzgjy-webfont.woff2') format('woff2'),

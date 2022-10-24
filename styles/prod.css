@@ -21,19 +21,6 @@ a,a:active {
     color: var(--small-text-color);
 }
 
-h1 {
-    color: var(--main-text-color)
-}
-
-h2 {
-    color: var(--main-text-color);
-}
-
-
-p {
-    color: var(--small-text-color)
-}
-
 /* This code seperates text and image using flex box */
 .CreditNImg {
     font-size: 2rem;
@@ -57,6 +44,8 @@ p {
     
     font-size: 2rem;
 
+    background-color: var(--element-color);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,4 +59,3 @@ p {
     padding-bottom: 7.5rem;
 
 }
-
