@@ -53,6 +53,18 @@ justify-content: center;
 
 }
 
+/* grid film*/
+.grid-container{
+  padding: 5vh;
+}
+.film{
+
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+ }
+
+
 /* Showcase for latest work */
 
 .latest{
