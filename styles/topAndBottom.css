@@ -5,6 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     position: sticky;
+    
 
     top: 0;
     justify-content: left;
@@ -15,7 +16,7 @@
 
 
     margin: auto;
-    padding: 1rem;
+    padding: 3vh;
 
 }
 .topbarLink{
@@ -55,21 +56,21 @@ a {
     transform: scaleX(1);
   }
 
+  /*The text at the bottom css*/ 
+
   .bottomText{
 
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:space-around;
+
     color: var(--small-text-color);
+    font-size: 5vh;
 
     background-color: black;
-    padding: 2rem;
+    padding: 6rem;
 
   }
 
   /* Footer */
-
-  footer {
-    margin-top: 3rem;
-  }

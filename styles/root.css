@@ -23,7 +23,14 @@
 
   h1,h2,h3 {
     color: var(--main-text-color);
+
   }
+  
+  h1{
+    font-family: 'mighaexpanded';
+
+  }
+
   p {
     color: var(--small-text-color);
   }
@@ -34,5 +41,6 @@
          url('../fonts/mighaexpanded-yzgjy-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-size: large;
 
 }

@@ -8,7 +8,6 @@
     box-sizing: border-box;
     
     background-color: var(--main-bg-color);
-    font-size: large;
     background-repeat: no-repeat;
    
 
@@ -40,6 +39,9 @@ a,a:active {
 
 
 }
+
+/*CSS alteration For specified text*/
+
 .textContainer {
     
     font-size: 2rem;
