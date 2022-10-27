@@ -63,6 +63,17 @@ h1 {
 
 
 }
+
+.shadow {
+
+    border: 0.5vh solid var(--small-text-color);
+  border-radius: 2vh;
+  padding: 0px;
+  box-shadow: 0.5vh 0.5vh 5px rgba(0, 0, 0, 0.379);
+
+}
+
+
 .textContainer {
     
     font-size: 2rem;

@@ -48,16 +48,27 @@ justify-content: center;
 }
 
 /* grid film*/
+
+
+
 .grid-container{
   padding: 5vh;
 }
 .film{
 
+
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 25% 25% 25% 25%;
+
  }
 
+ .film-img{
+  border: 0.1vh;
+  border-radius: 0.5vh;
+margin: 1vh;
+box-shadow: 0px 0.5vh 7px rgba(0, 0, 0, 0.379);
+}
 
 /* Showcase for latest work */
 
