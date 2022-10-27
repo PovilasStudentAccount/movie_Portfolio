@@ -8,7 +8,7 @@
 
 /* preloader itself*/
 #preloader{
-    background: #000;
+    background: #161616;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -39,7 +39,7 @@
 .spinner {
     width: 200px;
     height: 200px;
-    background: linear-gradient(90deg, #009fff, #ec2f4b);
+    background: linear-gradient(90deg, var(--main-bg-color), var(--element-color));
   }
   
 @keyframes rotate {
@@ -65,8 +65,9 @@
   width: 90%;
   height: 90%;
   border-radius: 50%;
-  background: black;
+  background: #161616;
 }
+/* end of spinner */
 
 /*Intro CSS*/
 
@@ -108,3 +109,4 @@
   opacity: 0;
   transition: ease-in-out 0.5s;
 }
+/* End of intro css */
