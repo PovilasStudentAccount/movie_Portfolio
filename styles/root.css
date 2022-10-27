@@ -1,11 +1,11 @@
 /* the main colors for the website */
 
 :root{
-
-  --main-bg-color: rgb(40, 0, 126);
-  --element-color: rgb(25, 115, 157); 
-  --main-text-color:#9dc3ff; ;
-  --small-text-color: #ffffff; 
+  --main-bg-color: #7abcea;
+  --element-color: #a6d2fe;
+  --main-text-color:#00171f;
+  --small-text-color: #00171f;
+  --top-bot-color: #1b6ba3;
   
   }
   
@@ -13,10 +13,11 @@
   
   :root{
 
-    --main-bg-color: rgb(29, 12, 61);
-    --element-color: rgb(50, 34, 110); 
-    --main-text-color:#72c9db; ;
-    --small-text-color: #97b8eb; 
+    --main-bg-color: #013454;
+    --element-color: #1e4a78;
+    --main-text-color:#8cceea;
+    --small-text-color: #74d1ef;
+    --top-bot-color: #1b6ba3;
   
   }
   }

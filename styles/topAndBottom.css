@@ -12,7 +12,7 @@
     align-items: space-between;
     width: auto;
     overflow: hidden;
-    background-color: var(--element-color);
+    background-color: var(--top-bot-color);
 
 
     margin: auto;
@@ -68,7 +68,7 @@ a {
     color: var(--small-text-color);
     font-size: 5vh;
 
-    background-color: black;
+    background-color: var(--top-bot-color);
     padding: 6rem;
 
   }
