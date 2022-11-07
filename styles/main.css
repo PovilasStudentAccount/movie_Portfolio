@@ -126,3 +126,12 @@ font-size: 150%;
   justify-content: right;
   margin-right: 10rem;
 }
+
+
+
+
+/* Function for if the screen is less than 800 px*/
+
+@media screen and (max-width: 992px) {
+  
+}
