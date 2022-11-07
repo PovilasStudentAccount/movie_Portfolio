@@ -27,9 +27,13 @@
 
   }
   
-  h1{
+  a.title{
     font-family: 'mighaexpanded';
-
+    font-size:2rem;
+  }
+  a.title:hover::before{
+    transform-origin: left;
+    transform: scaleX(0);
   }
 
   p {
