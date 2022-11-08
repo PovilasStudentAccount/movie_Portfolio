@@ -66,10 +66,10 @@ a {
     justify-content:space-around;
 
     color: var(--small-text-color);
-    font-size: 5vh;
+    font-size: 2vh;
 
     background-color: var(--top-bot-color);
-    padding: 6rem;
+    padding: 2.5rem;
 
   }
 
