@@ -23,6 +23,7 @@
 color: var(--small-text-color);
 display: flex;
 display: inline;
+
 flex-direction: row ;
 margin: auto;
 padding: 8px;
@@ -58,6 +59,15 @@ a {
     transform: scaleX(1);
   }
 
+@media screen and (max-width: 600px) {
+
+  .topbarLink{
+    display: none;
+    }
+
+
+  
+}
 
   /*The text at the bottom css*/ 
 
