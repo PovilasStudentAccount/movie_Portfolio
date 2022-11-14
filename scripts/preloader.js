@@ -4,6 +4,7 @@ let logo = document.querySelector('.logo-header');
 let logoSpan = document.querySelectorAll('.logo');
 
 
+
 //Preloader
 
 window.addEventListener("load", function(){
@@ -42,4 +43,3 @@ window.addEventListener("load", function(){
     })
 
 })
-}
