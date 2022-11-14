@@ -4,15 +4,8 @@ let logo = document.querySelector('.logo-header');
 let logoSpan = document.querySelectorAll('.logo');
 
 
-// store first time visit in session
-
-let data = sessionStorage.getItem('visited', false);
-
-//end of session storage
-
 
 //Preloader
-
 
 window.addEventListener("load", function(){
     loader.style.display = "none";
@@ -49,8 +42,4 @@ window.addEventListener("load", function(){
 
     })
 
-    sessionStorage.setItem('visited', true);
-
 })
-
-
