@@ -5,19 +5,22 @@
 
 .wrapper{
     
-    box-sizing: border-box;
-    
     background-color: var(--main-bg-color);
     background-repeat: no-repeat;
-   
-
-background-color: var(--main-bg-color);
 
 }
 
 /* Links */
 a,a:active {
     color: var(--small-text-color);
+}
+
+.wallPaper {
+    background-color: #040467;
+
+    border-top: 0.5rem solid var(--main-bg-color);
+
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--main-bg-color) 15rem ), repeating-linear-gradient( var(--main-bg-color), var(--element-color) );
 }
 
 /* This code seperates text and image using flex box */
@@ -29,6 +32,7 @@ a,a:active {
   align-items: center;
   max-width: 80rem;
   align-content: space-between
+  
 }
 .left,.right {
 
