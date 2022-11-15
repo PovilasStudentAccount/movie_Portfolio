@@ -70,9 +70,9 @@ transform: scale(1.1);
   grid-template-columns: 25% 25% 25% 25%;
 
 
- }
+}
 
- .film-img{
+.film-img{
   border: 0.1rem;
   border-radius: 0.5rem;
 margin: 1rem;
@@ -89,6 +89,20 @@ transition: transform .3s ease-in-out;
 transform: scale(1.1);
 
 }
+
+/* Video overlay for cards */
+.overlay{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  z-index: 2;
+  display: none;
+}
+
+
 /* Showcase for latest work */
 
 .latest{
