@@ -164,7 +164,10 @@ font-size: 150%;
   
   
    }
-
+   .video-js {
+    width:20rem;
+    resize: horizontal;
+  }
 
 }
 
@@ -187,7 +190,10 @@ font-size: 150%;
   
   
    }
-
+   .video-js {
+    width:10rem;
+    resize: horizontal;
+  }
 
 
 }
