@@ -87,10 +87,17 @@ transition: transform .3s ease-in-out;
 }
 .film-img:hover{
 transform: scale(1.1);
-
 }
 
-/* Video overlay for cards */
+
+/*    Buttons   */
+.btn{
+  background: none;
+  
+}
+
+
+/*    Video overlay for cards   */
 .overlay{
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
@@ -98,7 +105,7 @@ transform: scale(1.1);
   left: 0;
   right: 0;
   bottom:0;
-  z-index: 2;
+  z-index: 4;
   display: none;
 }
 
