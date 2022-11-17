@@ -28,13 +28,17 @@ justify-content: center;
 
 .swiper{
   width: auto;
-
+  max-width: 100rem;
+  max-height: 80rem;
+  
  
 
 }
 .swiper-slide img{
   width: 100%;
-  height: 100%;
+
+  height:80vh;
+
 
 }
 
@@ -183,9 +187,20 @@ font-size: 150%;
 @media screen and (max-width: 600px) {
 
   .swiper-slide img{
-    width: 100%;
+    width: 100%; 
+
+    height:100%;
 
 
+  
+  }
+
+  .swiper{
+    width: 30rem;
+    height: 20rem;
+
+    
+   
   
   }
   

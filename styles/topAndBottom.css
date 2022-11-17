@@ -1,4 +1,21 @@
 /* Top Navigation Bar */
+.menu {
+  top: 0;
+  background-color: var(--bg-menuColor);
+  color: var(--text-color1);
+  padding: .5rem;
+  width: 100%;
+  max-width: 80rem;
+  overflow: hidden;
+
+
+
+  
+    display: flex;
+    flex-direction: row;
+
+}
+
 .topbar {
 
     z-index: 3;
@@ -31,13 +48,13 @@ justify-content: center;
 align-items: center;
 }
 
-
-
 /* Link hover underline effect */
 a {
     color: #18272F;
     position: relative;
     text-decoration: none;
+
+  
   }
   
   a::before {
@@ -61,11 +78,29 @@ a {
 
 @media screen and (max-width: 600px) {
 
+  .menu {
+
+    
+      display: flex;
+      flex-direction: column;
+      color: var(--text-color1);
+      padding: .2rem;
+      width: 100%;
+      max-width: 80rem;
+  
+  }
+
   .topbarLink{
-    display: none;
+    display:none;
     }
 
-
+    .menu.show a {
+      display: block;
+      width: 100%;
+      flex-direction: column;
+  
+  
+  }
   
 }
 

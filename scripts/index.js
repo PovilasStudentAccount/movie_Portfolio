@@ -14,3 +14,11 @@ closeBtn.addEventListener('click',() => {
 })
 
 });
+
+const menu = document.getElementById("topbar");
+
+function fansyFunction(){
+
+document.getElementById("menu").classList.toggle("show")
+}
+   
