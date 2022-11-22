@@ -27,6 +27,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(
 .CreditNImg {
     font-size: 2rem;
   display: flex;
+  flex-direction: row;
   overflow: hidden;
   margin: auto;
   align-items: center;
@@ -64,4 +65,10 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(
     padding-top: 7.5rem; 
     padding-bottom: 7.5rem;
 
+}
+
+@media screen and (max-width: 600px) {
+    .CreditNImg {
+    flex-direction: column;
+    }
 }
