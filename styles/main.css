@@ -204,6 +204,13 @@ font-size: 150%;
   
   }
   
+  
+  /* Grid film */
+
+  .grid-container{
+    padding: 2rem;
+  }
+
   .film{
 
 
