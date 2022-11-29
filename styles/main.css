@@ -103,6 +103,12 @@ transform: scale(1.1);
   
 }
 
+.closeBtn{
+  font-size: 4rem;
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+
 
 /*    Video overlay for cards   */
 .overlay{
