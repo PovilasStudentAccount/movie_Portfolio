@@ -80,11 +80,11 @@
 
       <div class="grid-container">
       <div class="film">
-        <button class="overlayBtn" id="openOverlay"> <img class="film-img" src="/images/mMyers.jpg"> </button>
-        <button class="overlayBtn" id="openOverlay"> <img class="film-img" src="/images/mMyers.jpg"> </button>
-        <button class="overlayBtn" id="openOverlay"> <img class="film-img" src="/images/mMyers.jpg"> </button>
-        <button class="overlayBtn" id="openOverlay"> <img class="film-img" src="/images/mMyers.jpg"> </button>
-        <button class="overlayBtn" id="openOverlay"> <img class="film-img" src="/images/mMyers.jpg"> </button>
+        <button> <img class="film-img" src="/images/mMyers.jpg"> </button>
+        <button> <img class="film-img" src="/images/mMyers.jpg"> </button>
+        <button> <img class="film-img" src="/images/mMyers.jpg"> </button>
+        <button> <img class="film-img" src="/images/mMyers.jpg"> </button>
+        <button> <img class="film-img" src="/images/mMyers.jpg"> </button>
         <a href="" class="linkbutton"></a>
         
       </div>
@@ -92,27 +92,28 @@
 
     <!-- Cards video overlay -->
     <div class="overlay">
-      <button class="closeBtn" id="closeOverlay">a</button>
-      <video 
-      id="my-video"
-      class="video-js"
-      controls
-      preload=""
-      data-setup="{}"
-      > 
-        <source src="MY_VIDEO.mp4" type="video/mp4">
-        <source src="MY_VIDEO.webm" type="video/webm">
-
-        <p class="vjs-no-js">
-          To view this video please enable JavaScript, and consider upgrading to a
-          web browser that
-          <a href="https://videojs.com/html5-video-support/" target="_blank"
-            >supports HTML5 video</a
+      <button class="closeBtn" id="closeOverlay">X</button>
+      <video
+            id="pootis-status"
+            class="video-js"
+            controls
+            preload="auto"
+            width="800"
+            poster="images/portada_peter-grill-2.jpg"
+            data-setup="{}"
           >
-        </p>
-      </video>
+            
+            <source src="videos/Pootis_status.mp4" type="video/mp4" />
+            <source src="MY_VIDEO.webm" type="video/webm" />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+              >
+            </p>
+          </video>
     </div>
-
 
     </main>
 
