@@ -76,33 +76,7 @@ a {
     transform: scaleX(1);
   }
 
-@media screen and (max-width: 600px) {
 
-  .menu {
-
-    
-      display: flex;
-      flex-direction: column;
-      color: var(--text-color1);
-      padding: .2rem;
-      width: 100%;
-      max-width: 80rem;
-  
-  }
-
-  .topbarLink{
-    display:none;
-    }
-
-    .menu.show a {
-      display: block;
-      width: 100%;
-      flex-direction: column;
-  
-  
-  }
-  
-}
 
   /*The text at the bottom css*/ 
 
@@ -111,14 +85,71 @@ a {
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-evenly;
+
+    padding-top: 2.5rem; 
+    padding-bottom: 2.5rem;
+    padding-left:2rem;
+    padding-right:2rem;
+
+
+    overflow: hidden;
 
     color: var(--small-text-color);
-    font-size: 2vh;
+    font-size: 1rem;
 
     background-color: var(--top-bot-color);
-    padding: 2.5rem;
+
 
   }
 
-  /* Footer */
+  .botDirection2{
+
+   
+    margin: 1%;
+    width: 100%;
+    flex-direction: column;
+ 
+}
+
+.spacing{
+
+margin-top: 5px;
+margin-bottom: 5px;
+
+}
+
+
+  @media screen and (max-width: 600px) {
+
+    .menu {
+  
+      
+        display: flex;
+        flex-direction: column;
+        color: var(--text-color1);
+        padding: .2rem;
+        width: 100%;
+        max-width: 80rem;
+    
+    }
+  
+    .topbarLink{
+      display:none;
+      }
+  
+      .menu.show a {
+        display: block;
+        width: 100%;
+        flex-direction: column;
+    
+    
+    }
+    
+    .bottomText{
+
+      flex-direction: column;
+  
+    }
+    
+  }
