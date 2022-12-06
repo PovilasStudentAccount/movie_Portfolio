@@ -2,7 +2,7 @@
 //Cards video overlay
 
 document.addEventListener('DOMContentLoaded', () => {
-const openBtn = document.querySelector('#openOverlay');
+const openBtn = document.querySelector('.film');
 const closeBtn = document.querySelector('#closeOverlay');
 const overlay = document.querySelector('.overlay');
 

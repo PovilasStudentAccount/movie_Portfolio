@@ -76,6 +76,9 @@ transform: scale(1.1);
 
 }
 
+/*grid button style*/
+.film button{background: none;border: none;}
+
 .film-img{
   border: 0.1rem;
   border-radius: 0.5rem;
@@ -100,6 +103,12 @@ transform: scale(1.1);
   
 }
 
+.closeBtn{
+  font-size: 4rem;
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+
 
 /*    Video overlay for cards   */
 .overlay{
@@ -113,52 +122,8 @@ transform: scale(1.1);
   display: none;
 }
 
-
-/* Showcase for latest work */
-
-.latest{
-  margin-left: 6rem;
-  margin-right: 6rem;
-  margin-top: 6rem;
-
-  padding-bottom: 5rem;
-  background-color: var(--element-color);
-}
-
-#orange-span{
-  height: 3.5rem;
-  background-color: var(--main-text-color);
-}
-
-.latest-show{
-  display: flex;
-  margin: 2rem;
-}
-
-#latest-text{
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#latest-title{
-font-size: 150%;
-}
-
-#latest-desc{
-  margin-top: 4rem;
-  font-size: 100%;
-}
-
-#latest-video{
-  display: flex;
-  justify-content: right;
-  margin-right: 10rem;
-}
-
-
+/*video element style*/
+.video-js{left:30%;top:25%}
 
 
 
