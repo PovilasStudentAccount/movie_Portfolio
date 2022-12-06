@@ -23,21 +23,25 @@ background: var(--element-color);
 display: flex;
 align-items: center;
 justify-content: center;
+overflow: hidden;
 
 }
 
 .swiper{
-  width: auto;
-  max-width: 100rem;
-  max-height: 80rem;
+
+  width: 70rem;
+  height: 80vh;
   
  
 
 }
 .swiper-slide img{
-  width: 100%;
 
   height:80vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 
 
 }
