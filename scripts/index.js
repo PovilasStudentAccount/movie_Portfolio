@@ -23,4 +23,26 @@ function fansyFunction(){
 
 document.getElementById("menu").classList.toggle("show")
 }
+
+//Overlay videos storing
+
+var videoArray = new Array();
+
+window.addEventListener("load", () =>{
+    // (B1) Data array
+    var data = [
+        [],
+        []
+    ];
+
+    // (B2) Loop + Add cells
+    let container = document.getElementById("arrayGrid");
+    for (let i of data) { for (let j of i) {
+        let cell = document.createElement("div");
+        cell.innerHTML = j;
+        cell.className = "cell";
+        container.appendChild(cell);
+    }}
+});
+
    
