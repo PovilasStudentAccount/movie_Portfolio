@@ -26,7 +26,7 @@ document.getElementById("menu").classList.toggle("show")
 
 //Overlay videos storing
 
-var videoArray = new Array();
+let videoArray = new Array("../videos/Pootis_status.mp4","../videos/red_bird.mp4");
 
 window.addEventListener("load", () =>{
     // (B1) Data array
