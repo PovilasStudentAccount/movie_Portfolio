@@ -86,15 +86,15 @@ transform: scale(1.1);
 .film-img{
   border: 0.1rem;
   border-radius: 0.5rem;
-margin: 1rem;
-box-shadow: 0px 0.5rem 7px rgba(0, 0, 0, 0.379);
+  margin: 1rem;
+  box-shadow: 0px 0.5rem 7px rgba(0, 0, 0, 0.379);
 
-width: 90%;
-height: 90%;
+  width: 90%;
+  height: 90%;
 
-transform: scale(1);
+  transform: scale(1);
 
-transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
 }
 .film-img:hover{
 transform: scale(1.1);
@@ -102,28 +102,37 @@ transform: scale(1.1);
 
 
 /*    Buttons   */
-.overlayBtn{
-  background: none;
-  
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 8rem;
+  font-weight: bold;
 }
 
-.closeBtn{
-  font-size: 4rem;
-  margin-top: 4rem;
-  margin-left: 4rem;
+.close:hover,
+.close:focus {
+  color:black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 
 /*    Video overlay for cards   */
-.overlay{
+.modal{
+  display: none;
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom:0;
-  z-index: 4;
-  display: none;
+  z-index: 5;
+  overflow: auto;
+}
+
+.modal-content{
+  margin: 15% auto;
+  padding: 20px;
 }
 
 /*video element style*/

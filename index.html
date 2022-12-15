@@ -80,19 +80,21 @@
 
       <div class="grid-container">
       <div class="film" id="arrayGrid">
-        <button> <img class="film-img" src="/images/Pov close up.webp"> </button>
+        <button id="vid1"> <img class="film-img" src="/images/Pov close up.webp"> </button>
+        <button id="vid2"> <img class="film-img" src="/images/mMyers.webp"> </button>
         <button> <img class="film-img" src="/images/mMyers.webp"> </button>
         <button> <img class="film-img" src="/images/mMyers.webp"> </button>
         <button> <img class="film-img" src="/images/mMyers.webp"> </button>
-        <button> <img class="film-img" src="/images/mMyers.webp"> </button>
-        <a href="" class="linkbutton"></a>
         
       </div>
 
-    <!-- Cards video overlay -->
-    <div class="overlay">
-      <button class="closeBtn" id="closeOverlay">X</button>
-      <video
+    <!-- Modal -->
+    <div id= "modal1" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <video
             id="pootis-status"
             class="video-js"
             controls
@@ -112,6 +114,8 @@
               >
             </p>
           </video>
+      </div>
+      
     </div>
 
     </main>
