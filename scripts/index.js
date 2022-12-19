@@ -1,5 +1,5 @@
 
-var myPlayer = _V_
+
 
 //Modal video overlay
 
