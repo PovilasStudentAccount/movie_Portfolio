@@ -117,17 +117,16 @@ transform: scale(1.1);
 }
 
 
-/*    Video overlay for cards   */
+/*    Modal overlay for cards   */
 .modal{
   display: none;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom:0;
-  z-index: 5;
-  overflow: auto;
+  z-index: 4;
 }
 
 .modal-content{
@@ -136,7 +135,7 @@ transform: scale(1.1);
 }
 
 /*video element style*/
-.video-js{left:30%;top:25%}
+.video-js{left:30%;top:25%;width: 50rem;}
 
 
 

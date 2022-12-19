@@ -57,7 +57,7 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img src="./images/Pov close up.webp"/></div>
+            <div class="swiper-slide"><img src="./images/mMyers.webp"/></div>
             <div class="swiper-slide"><img src="./images/mMyersCloseUp.Webp" /></div>
             <div class="swiper-slide"><img src="./images/halloweenMovie.Webp" /></div>
 
@@ -80,30 +80,30 @@
 
       <div class="grid-container">
       <div class="film" id="arrayGrid">
-        <button id="vid1"> <img class="film-img" src="/images/Pov close up.webp"> </button>
-        <button id="vid2"> <img class="film-img" src="/images/mMyers.webp"> </button>
-        <button> <img class="film-img" src="/images/mMyers.webp"> </button>
+        <button id="vidBtn" class="vidBtn"> <img class="film-img" src="/images/mMyers.webp"> </button>
+        <button id="vidBtn" class="vidBtn"> <img class="film-img" src="/images/mMyers.webp"> </button>
+        <button id="vidBtn" class="vidBtn"> <img class="film-img" src="/images/mMyers.webp"> </button>
         <button> <img class="film-img" src="/images/mMyers.webp"> </button>
         <button> <img class="film-img" src="/images/mMyers.webp"> </button>
         
       </div>
 
-    <!-- Modal -->
+    <!-- Modal Section of web page code -->
+    
+    <!-- Modal 1-->
     <div id= "modal1" class="modal">
 
-      <!-- Modal content -->
+      <!-- Modal 1 content -->
       <div class="modal-content">
         <span class="close">&times;</span>
         <video
-            id="pootis-status"
+            id="vid1"
             class="video-js"
             controls
             preload="auto"
-            width="800"
-            poster="images/portada_peter-grill-2.webp"
+            poster="images/mMyers.webp"
             data-setup="{}"
           >
-            
             <source src="videos/Pootis_status.mp4" type="video/mp4" />
             <source src="MY_VIDEO.webm" type="video/webm" />
             <p class="vjs-no-js">
@@ -114,9 +114,67 @@
               >
             </p>
           </video>
+
       </div>
-      
     </div>
+
+      <!-- Modal 2 -->
+      <div id="modal2" class="modal">
+
+        <!-- Modal 2 content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <video
+            id="vid2"
+            class="video-js"
+            controls
+            preload="auto"
+            poster="images/Suit-For-Parrots.webp"
+            data-setup="{}"
+            >
+            <source src="videos/red_bird.mp4" type="video/mp4" />
+            <source src="MY_VIDEO.webm" type="video/webm" />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+              >
+            </p>
+          </video>
+        </div>
+      </div>
+
+      <!-- Modal 3 -->
+      <div id="modal3" class="modal">
+
+        <!-- Modal 3 content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <video
+            id="vid3"
+            class="video-js"
+            controls
+            preload="auto"
+            poster="images/povilas.webp"
+            data-setup="{}"
+            >
+            <source src="videos/real-kiryu.mp4" type="video/mp4" />
+            <source src="MY_VIDEO.webm" type="video/webm" />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+              >
+            </p>
+          </video>
+        </div>
+      </div>
+
+    <!-- End of modal code -->
+      
+    
 
     </main>
 
