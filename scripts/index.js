@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var span = document.getElementsByClassName("close");
 
 //Open modal code
+
 openBtn[0].onclick = function() {
     modal[0].style.display = "block";
 }
@@ -37,18 +38,14 @@ span[2].onclick = function() {
 }
 
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    console.log(event.target);
+    if (event.target == event.target) {
+        modal[0,1].style.display = "none";
+        
     }
 }
 });
 
-const menu = document.getElementById("topbar");
-
-function fansyFunction(){
-
-document.getElementById("menu").classList.toggle("show")
-}
 
 
 
