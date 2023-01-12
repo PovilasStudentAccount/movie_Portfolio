@@ -46,6 +46,13 @@ window.onclick = function(event) {
 }
 });
 
+const menu = document.getElementById("topbar");
+
+function fansyFunction(){
+
+document.getElementById("menu").classList.toggle("show")
+}
+
 
 
 
