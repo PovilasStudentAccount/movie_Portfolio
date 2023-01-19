@@ -36,14 +36,15 @@ span[1].onclick = function() {
 span[2].onclick = function() {
     modal[2].style.display = 'none';
 }
-
+/*
 window.onclick = function(event) {
     console.log(event.target);
-    if (event.target == event.target) {
-        modal[0,1].style.display = "none";
+    if (event.target == modal) {
+        modal[0,1,2].style.display = "none";
         
     }
-}
+} */
+
 });
 
 const menu = document.getElementById("topbar");
