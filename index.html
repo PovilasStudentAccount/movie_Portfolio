@@ -80,23 +80,23 @@
 
       <div class="grid-container">
       <div class="film" id="arrayGrid">
-        <button id="vidBtn" class="vidBtn"> <img class="film-img" src="/images/mMyers.webp"> </button>
-        <button id="vidBtn" class="vidBtn"> <img class="film-img" src="/images/mMyers.webp"> </button>
-        <button id="vidBtn" class="vidBtn"> <img class="film-img" src="/images/mMyers.webp"> </button>
-        <button> <img class="film-img" src="/images/mMyers.webp"> </button>
-        <button> <img class="film-img" src="/images/mMyers.webp"> </button>
+        <button> <img src="/images/mMyers.webp" alt="" class="film-img" data-target="simpleModal_1" data-toggle="modal"></button>
+        <button> <img src="/images/mMyers.webp" alt="" class="film-img" data-target="simpleModal_2" data-toggle="modal"></button>
+        <button> <img src="/images/mMyers.webp" alt="" class="film-img" data-target="simpleModal_3" data-toggle="modal"></button>
         
       </div>
 
     <!-- Modal Section of web page code -->
     
-    <!-- Modal 1-->
-    <div id= "modal1" class="modal">
+   
+    <!--new modal code here-->
+    
+    
+    <div id="simpleModal_1" class="modal">
+      <div class="modal-window">
+     <button data-dismiss="modal" class="modalBtn">Close</button>
 
-      <!-- Modal 1 content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <video
+          <video
             id="vid1"
             class="video-js"
             controls
@@ -115,16 +115,15 @@
               >
             </p>
           </video>
-
+         
       </div>
-    </div>
+  </div>
 
-      <!-- Modal 2 -->
-      <div id="modal2" class="modal">
 
-        <!-- Modal 2 content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
+  <div id="simpleModal_2" class="modal">
+      <div class="modal-window">
+    <button data-dismiss="modal" class="modalBtn">Close</button>
+
           <video
             id="vid2"
             class="video-js"
@@ -144,36 +143,10 @@
               >
             </p>
           </video>
-        </div>
+
       </div>
-
-      <!-- Modal 3 -->
-      <div id="modal3" class="modal">
-
-        <!-- Modal 3 content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <video
-            id="vid3"
-            class="video-js"
-            controls
-            preload="auto"
-            poster="images/povilas.webp"
-            data-setup="{}"
-            >
-            <source src="videos/real-kiryu.mp4" type="video/mp4" />
-            <source src="MY_VIDEO.webm" type="video/webm" />
-            <p class="vjs-no-js">
-              To view this video please enable JavaScript, and consider upgrading to a
-              web browser that
-              <a href="https://videojs.com/html5-video-support/" target="_blank"
-                >supports HTML5 video</a
-              >
-            </p>
-          </video>
-        </div>
-      </div>
-
+  </div>
+  
     <!-- End of modal code -->
       
     
