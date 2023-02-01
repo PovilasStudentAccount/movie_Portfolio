@@ -19,8 +19,19 @@ document.addEventListener('click', function (e) {
         var modal = document.querySelector('[class="modal open"]');
         modal.classList.remove('open');
         e.preventDefault();
+
     }
 }, false);
+
+//pause video on modal close
+
+var vidPlayers = videojs.players_video_id;
+
+vidPlayers.src({type: 'video/mp4', src: '/videos/Pootis_status.mp4'});
+vidPlayers.ready(function() {
+    player.pause().currentTime(0).trigger('loadstart');
+});
+
 
 //modal code end
 
