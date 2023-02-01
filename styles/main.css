@@ -12,58 +12,50 @@ h1 {
   font-family: 'mighaexpanded';
 }
 
-
-
 /*The slideshow v2*/
 
 .container{
-width: 100%;
-
-background: var(--element-color);
-display: flex;
-align-items: center;
-justify-content: center;
-overflow: hidden;
-
+  width: 100%;
+  background: var(--element-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
+
+/* slideshow size container*/
 
 .swiper{
-
   width: 67%;
   height: 80vh;
-  
- 
-
 }
+
+/* slideshow Img size*/
+
 .swiper-slide img{
-
   width: 100%; 
-
   height:100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
-
-
 }
 
-.swiper .swiper-button-next, .swiper .swiper-button-prev{
+/* slideshow slide buttons*/
 
+.swiper .swiper-button-next, .swiper .swiper-button-prev{
   color: var(--button-color);
   transition: transform .3s ease-in-out;
   transform: scale(1);
-
 }
+
+/* slideshow slide buttons expanding when hovered*/
 
 .swiper .swiper-button-next:hover, .swiper .swiper-button-prev:hover{
-
-transform: scale(1.1);
+  transform: scale(1.1);
 }
+
 .swiper .swiper-pagination-bullet-active{
-
   background: var(--main-text-color);
-
 }
 
 /* grid film*/
@@ -137,13 +129,14 @@ transform: scale(1.1);
 }
 
 /*video element style*/
+
 .video-js{left:30%;top:25%;width: 50rem;}
-
-
 
 /* Functions for if the screen is less than 992 px*/
 
 @media screen and (max-width: 992px) {
+
+  /* slideshow size container*/
 
   .swiper{
     width: 45rem;
@@ -151,14 +144,11 @@ transform: scale(1.1);
   }
   
   .film{
-
-
     display: grid;
     grid-template-columns: 33% 33% 33%;
-  
-  
    }
-   .video-js {
+
+  .video-js {
     width:20rem;
     resize: horizontal;
   }
@@ -169,13 +159,12 @@ transform: scale(1.1);
 
 @media screen and (max-width: 600px) {
 
+  /* slideshow size container*/
+
   .swiper{
     width: 30rem;
     height: 20rem;
-
-  
   }
-  
   
   /* Grid film */
 
@@ -184,14 +173,11 @@ transform: scale(1.1);
   }
 
   .film{
-
-
     display: grid;
-    grid-template-columns: 50% 50%;
-  
-  
-   }
-   .video-js {
+    grid-template-columns: 50% 50%;  
+  }
+
+  .video-js {
     width:10rem;
     resize: horizontal;
   }
