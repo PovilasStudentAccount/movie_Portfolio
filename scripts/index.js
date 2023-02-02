@@ -11,6 +11,14 @@ document.addEventListener('click', function (e) {
             var m_ID = target.getAttribute('data-target');
             document.getElementById(m_ID).classList.add('open');
             e.preventDefault();
+
+            videojs('vid1', {
+                controls: false,
+                autoplay: false,
+                preload: 'auto',
+                height: 600,
+                poster: img('/images/mMyers.webp'),
+            });
         }
     }
 
@@ -23,15 +31,21 @@ document.addEventListener('click', function (e) {
     }
 }, false);
 
+
+var player = videojs('vid1');
+
+
+
+
 //pause video on modal close
 
-var vidPlayers = videojs.players_video_id;
+/*
 
 vidPlayers.src({type: 'video/mp4', src: '/videos/Pootis_status.mp4'});
 vidPlayers.ready(function() {
     player.pause().currentTime(0).trigger('loadstart');
 });
-
+*/
 
 //modal code end
 
