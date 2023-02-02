@@ -24,10 +24,6 @@ padding:0px;
     background-color: var(--main-bg-color);
     background-image: url("https://transparenttextures.com/patterns/batthern.png");
 }
-/* Links */
-a,a:active {
-    color: var(--small-text-color);
-}
 
 h1 {
     color: var(--main-text-color);

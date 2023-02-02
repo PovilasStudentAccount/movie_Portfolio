@@ -10,11 +10,6 @@
 
 }
 
-/* Links */
-a,a:active {
-    color: var(--small-text-color);
-}
-
 .wallPaper {
     background-color: #040467;
 
