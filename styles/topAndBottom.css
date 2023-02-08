@@ -1,4 +1,10 @@
 /* Top Navigation Bar */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
 .menu {
   top: 0;
   background-color: var(--bg-menuColor);
@@ -13,14 +19,11 @@
 
 }
 
-title {
-  position: relative;
-}
+/* Link hover underline effect */
 
 .topbar {
 
     position: sticky;
-    z-index: 3;
     flex-wrap: wrap;
 
     top: 0;
@@ -34,7 +37,6 @@ title {
 .topbarLink{
 color: var(--small-text-color);
 
-display: inline;
 margin: auto;
 padding: 8px;
 position: relative;
@@ -58,7 +60,7 @@ text-decoration: none;
     transform-origin: left;
     transform: scaleX(1);
   }
-/* Link hover underline effect */
+
 
 
 
