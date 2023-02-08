@@ -13,9 +13,13 @@
 
 }
 
+title {
+  position: relative;
+}
+
 .topbar {
-   position: -webkit-sticky;
-    position:sticky;
+
+    position: sticky;
     z-index: 3;
     flex-wrap: wrap;
 
@@ -31,13 +35,9 @@
 color: var(--small-text-color);
 
 display: inline;
-
-
 margin: auto;
 padding: 8px;
-
-
-
+position: relative;
 text-decoration: none;
 }
 
