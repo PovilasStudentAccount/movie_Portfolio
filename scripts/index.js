@@ -5,6 +5,7 @@
 document.addEventListener('click', function (e) {
     e = e || window.event;
     var target = e.target || e.srcElement;
+    var myPlayer = videojs('vid1');
 
     if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') {
         if (target.hasAttribute('data-target')) {
@@ -12,13 +13,7 @@ document.addEventListener('click', function (e) {
             document.getElementById(m_ID).classList.add('open');
             e.preventDefault();
 
-            videojs('vid1', {
-                controls: false,
-                autoplay: false,
-                preload: 'auto',
-                height: 600,
-                poster: img('/images/mMyers.webp'),
-            });
+            
         }
     }
 
@@ -28,11 +23,17 @@ document.addEventListener('click', function (e) {
         modal.classList.remove('open');
         e.preventDefault();
 
+        myPlayer.src({type: 'video/mp4', src: '/videos/Pootis_status.mp4'});
+        myPlayer.ready(function() {
+        myPlayer.play();
+        myPlayer.pause();
+    });
     }
+    
+    
+    
+
 }, false);
-
-
-var player = videojs('vid1');
 
 
 
