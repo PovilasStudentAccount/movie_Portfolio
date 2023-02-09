@@ -23,7 +23,7 @@ document.addEventListener('click', function (e) {
         modal.classList.remove('open');
         e.preventDefault();
 
-        myPlayer.src({type: 'video/mp4', src: '/videos/Pootis_status.mp4'});
+        
         myPlayer.ready(function() {
         myPlayer.play();
         myPlayer.pause();
