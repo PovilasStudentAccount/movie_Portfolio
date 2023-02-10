@@ -5,8 +5,10 @@ header {
   z-index: 3;
 }
 
+
+
 .menu {
-  top: 0;
+
   background-color: var(--bg-menuColor);
   color: var(--text-color1);
   padding: .5rem;
@@ -103,12 +105,17 @@ margin-top: 5px;
 margin-bottom: 5px;
 
 }
+/* Hides Mobile menu until screen width is below 600px*/
 
+@media screen and (min-width: 600px){
+  .mobile-Menu{
+    display: none !important;
+  }
+}
 
 @media screen and (max-width: 600px) {
 
   .menu {
-  
       
     display: flex;
     flex-direction: column;
@@ -116,10 +123,12 @@ margin-bottom: 5px;
     width: 100%;
     max-width: 80rem;
 
-    
+  }
+/* Hides the prior logo for replacement of the new menu*/
+  .top-logo {
+    display: none !important;
   }
 
-  
   .topbarLink{
     display:none;
   }

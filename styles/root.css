@@ -22,6 +22,11 @@
     --button-color: white;
   
   }
+  
+h1 {
+  font-family: 'mighaexpanded';
+}
+
   }
 
   h1,h2,h3 {
@@ -29,12 +34,12 @@
 
   }
   
-  a.title{
+  a.top-logo, a.mobile-Menu{
     font-family: 'mighaexpanded';
     font-size:2rem;
     color: var(--main-text-color);
   }
-  a.title:hover::before{
+  a.top-logo:hover::before, a.mobile-Menu:hover::before{
     transform-origin: left;
     transform: scaleX(0);
   }
