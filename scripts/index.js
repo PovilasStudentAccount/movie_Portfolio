@@ -5,7 +5,9 @@
 document.addEventListener('click', function (e) {
     e = e || window.event;
     var target = e.target || e.srcElement;
-    var myPlayer = videojs('vid1');
+    var myPlayer = [videojs("vid1"),
+                    videojs("vid2"),
+                    videojs("vid3")];
 
     if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') {
         if (target.hasAttribute('data-target')) {
@@ -23,34 +25,14 @@ document.addEventListener('click', function (e) {
         modal.classList.remove('open');
         e.preventDefault();
 
-        
-        myPlayer.ready(function() {
-        myPlayer.play();
-        myPlayer.pause();
-    });
+        for (var i = 0; i < myPlayer.length; i++){
+
+                myPlayer[i].pause();
+                
+        };
     }
     
-    
-    
-
 }, false);
-
-
-
-
-//pause video on modal close
-
-/*
-
-vidPlayers.src({type: 'video/mp4', src: '/videos/Pootis_status.mp4'});
-vidPlayers.ready(function() {
-    player.pause().currentTime(0).trigger('loadstart');
-});
-*/
-
-//modal code end
-
-
 
 const menu = document.getElementById("topbar");
 

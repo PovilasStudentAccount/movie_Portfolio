@@ -1,3 +1,5 @@
+@import "/fonts/league-spartan-master/webfonts/stylesheet.css";
+
 /* the main colors for the website */
 
 :root{
@@ -30,7 +32,7 @@
   }
   
   a.title{
-    font-family: 'mighaexpanded';
+    font-family: 'League Spartan';
     font-size:2rem;
   }
   a.title:hover::before{
@@ -41,13 +43,3 @@
   p {
     color: var(--small-text-color);
   }
-
-  @font-face {
-    font-family: 'mighaexpanded';
-    src: url('../fonts/mighaexpanded-yzgjy-webfont.woff2') format('woff2'),
-         url('../fonts/mighaexpanded-yzgjy-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-size: large;
-
-}
