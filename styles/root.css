@@ -1,5 +1,11 @@
 /* the main colors for the website */
 
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
 :root{
   --main-bg-color: #7abcea;
   --element-color: #a6d2fe;
