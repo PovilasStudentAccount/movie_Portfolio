@@ -9,6 +9,9 @@ document.addEventListener('click', function (e) {
                     videojs("vid2"),
                     videojs("vid3")];
 
+    //video js options loop for array access
+    for (var i = 0; i < myPlayer.length; i++){
+
     if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') {
         if (target.hasAttribute('data-target')) {
             var m_ID = target.getAttribute('data-target');
@@ -25,13 +28,13 @@ document.addEventListener('click', function (e) {
         modal.classList.remove('open');
         e.preventDefault();
 
-        for (var i = 0; i < myPlayer.length; i++){
+        
 
                 myPlayer[i].pause();
                 
-        };
+        
     }
-    
+};
 }, false);
 
 const menu = document.getElementById("topbar");
@@ -40,10 +43,3 @@ function fansyFunction(){
 
 document.getElementById("menu").classList.toggle("show")
 }
-
-
-
-
-
-
-   

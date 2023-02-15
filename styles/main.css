@@ -132,7 +132,7 @@ transform: scale(1.1);
   background-color: #FFFFFF;
   width: 50%;
   margin: 10% auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 .modal-window.small {
@@ -172,7 +172,6 @@ button.modalBtn { padding: 15px; font-size: 12px; background: indianred; color: 
 
 /*video element style*/
 .video-js{left:5%;top:25%;width: 50rem;}
-
 
 
 /* Functions for if the screen is less than 992 px*/
