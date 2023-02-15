@@ -14,7 +14,7 @@ h1 {
 
 
 
-/*The slideshow v2*/
+/*The slideshow*/
 
 .container{
 width: 100%;
@@ -37,7 +37,7 @@ overflow: hidden;
 }
 .swiper-slide img{
 
-  width: 100%; 
+  width: auto; 
 
   height:100%;
   display: block;
@@ -114,7 +114,7 @@ transform: scale(1.1);
   cursor: pointer;
 }
 
-/* ----------- New modal overlay code ------------- */
+/* ----------- Modal overlay code ------------- */
 
 
 .modal {
@@ -165,7 +165,7 @@ transform: scale(1.1);
 }
 
 .open {
-  display: block;
+  display: flex;
 }
 
 
@@ -174,7 +174,10 @@ button.modalBtn { padding: 15px; font-size: 12px; background: indianred; color: 
       
 
 /*video element style*/
-.video-js{left:5%;top:25%;width: 50rem;}
+.video-js{
+  left:0;
+  top:25%;
+  width: 50rem;}
 
 
 /* Functions for if the screen is less than 992 px*/

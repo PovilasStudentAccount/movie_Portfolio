@@ -5,12 +5,16 @@
 document.addEventListener('click', function (e) {
     e = e || window.event;
     var target = e.target || e.srcElement;
+    //array of videos
     var myPlayer = [videojs("vid1"),
                     videojs("vid2"),
                     videojs("vid3")];
 
     //video js options loop for array access
     for (var i = 0; i < myPlayer.length; i++){
+
+        //make all videos responsive to resolution
+        myPlayer[i].fluid(true);
 
     if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') {
         if (target.hasAttribute('data-target')) {
@@ -28,10 +32,8 @@ document.addEventListener('click', function (e) {
         modal.classList.remove('open');
         e.preventDefault();
 
-        
-
-                myPlayer[i].pause();
-                
+        //make video pause upon modal close
+        myPlayer[i].pause();               
         
     }
 };
