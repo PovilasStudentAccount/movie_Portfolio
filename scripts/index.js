@@ -8,13 +8,17 @@ document.addEventListener('click', function (e) {
     //array of videos
     var myPlayer = [videojs("vid1"),
                     videojs("vid2"),
-                    videojs("vid3")];
+                    videojs("vid3"),
+                    videojs("vid4")];
 
     //video js options loop for array access
-    for (var i = 0; i < myPlayer.length; i++){
+    for (let i = 0; i < myPlayer.length; i++){
 
         //make all videos responsive to resolution
+        myPlayer[i].aspectRatio('16:9');
         myPlayer[i].fluid(true);
+        
+        }
 
     if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') {
         if (target.hasAttribute('data-target')) {
@@ -33,10 +37,12 @@ document.addEventListener('click', function (e) {
         e.preventDefault();
 
         //make video pause upon modal close
+        for (let i = 0; i < myPlayer.length; i++){
         myPlayer[i].pause();               
-        
+        }
+
     }
-};
+
 }, false);
 
 const menu = document.getElementById("topbar");

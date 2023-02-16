@@ -129,10 +129,10 @@ transform: scale(1.1);
   bottom: 0;
   right: 0;
   display: none;
-  overflow: auto;
+  overflow: none;
   background-color: #000000;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 9999;
+  z-index: 1000;
 }
 
 .modal-window {
@@ -140,7 +140,7 @@ transform: scale(1.1);
   background-color: #FFFFFF;
   width: 50%;
   margin: 10% auto;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .modal-window.small {
@@ -174,7 +174,7 @@ transform: scale(1.1);
 }
 
 
-button.modalBtn { padding: 15px; font-size: 12px; background: indianred; color: #FFF; border: none;}
+button.modalBtn {float: right; padding: 15px; margin-top: 2rem; margin-left: 2rem; font-size: 12px; background: indianred; color: #FFF; border: none;}
       .subheading { font-style: italic }
       
 
