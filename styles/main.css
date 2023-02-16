@@ -29,7 +29,7 @@ overflow: hidden;
 
 .swiper{
 
-  width: 67%;
+  width: 100vw;
   height: 55vh;
   
  
@@ -53,12 +53,13 @@ overflow: hidden;
   color: var(--button-color);
   transition: transform .3s ease-in-out;
   transform: scale(1);
+  margin-inline: 4rem;
 
 }
 
 .swiper .swiper-button-next:hover, .swiper .swiper-button-prev:hover{
 
-transform: scale(1.1);
+transform: scale(1.7);
 }
 .swiper .swiper-pagination-bullet-active{
 
