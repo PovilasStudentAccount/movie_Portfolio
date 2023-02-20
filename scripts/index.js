@@ -17,6 +17,7 @@ document.addEventListener('click', function (e) {
         //make all videos responsive to resolution
         myPlayer[i].aspectRatio('16:9');
         myPlayer[i].fluid(true);
+        myPlayer[i].volume(0.5);
         
         }
 

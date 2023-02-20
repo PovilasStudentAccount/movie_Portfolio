@@ -136,11 +136,17 @@ transform: scale(1.1);
 }
 
 .modal-window {
+  display: flex;
   position: relative;
   background-color: #FFFFFF;
   width: 50%;
   margin: 10% auto;
   padding: 1rem;
+}
+
+.video-description{
+  margin: 0 ;/* Need a way to split video and description equally without making video shrink horizontally */
+  /* why is the video shrinking horizontally */
 }
 
 .modal-window.small {
@@ -170,7 +176,7 @@ transform: scale(1.1);
 }
 
 .open {
-  display: flex;
+  display: block;
 }
 
 
