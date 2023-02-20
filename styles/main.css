@@ -30,7 +30,7 @@ overflow: hidden;
 .swiper{
 
   width: 110vw;
-  height: 60vh;
+  height: 50vh;
 
 
 }
@@ -71,8 +71,17 @@ transform: scale(1.7);
 
 }
 
-/* grid film*/
+/* Grid title */
+.gridTitle {
+  text-align: center;
+  font-family: 'League Spartan';
+  font-size: 3.5rem;
+  color: #B7C8D6;
+  margin-block-start: 2rem;
+  letter-spacing: 0.1rem;
+}
 
+/* grid film*/
 
 
 .grid-container{
