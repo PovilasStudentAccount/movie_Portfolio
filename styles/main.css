@@ -3,7 +3,13 @@
   background-color: var(--main-bg-color);
 }
 
-/*The slideshow v2*/
+h1 {
+  font-family: 'League Spartan';
+}
+
+
+
+/*The slideshow*/
 
 .container{
   width: 100%;
@@ -17,19 +23,29 @@
 /* slideshow size container*/
 
 .swiper{
-  width: 67%;
-  height: 80vh;
-}
 
-/* slideshow Img size*/
+  width: 110vw;
+  height: 50vh;
+
+
+}
 
 .swiper-slide img{
-  width: 100%; 
+
+  width: auto; 
+  max-width:120%;
+ 
+
+
   height:100%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
 }
+
 
 /* slideshow slide buttons*/
 
@@ -37,24 +53,49 @@
   color: var(--button-color);
   transition: transform .3s ease-in-out;
   transform: scale(1);
+  margin-inline: 4rem;
+
 }
 
 /* slideshow slide buttons expanding when hovered*/
 
 .swiper .swiper-button-next:hover, .swiper .swiper-button-prev:hover{
-  transform: scale(1.1);
+
+transform: scale(1.7);
 }
 
 .swiper .swiper-pagination-bullet-active{
   background: var(--main-text-color);
 }
 
+/* Grid title */
+.gridTitle {
+  text-align: center;
+  font-family: 'League Spartan';
+  font-size: 3.5rem;
+  color: #B7C8D6;
+  margin-block-start: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+/* Grid title */
+.gridTitle {
+  text-align: center;
+  font-family: 'League Spartan';
+  font-size: 3.5rem;
+  color: #B7C8D6;
+  margin-block-start: 2rem;
+  letter-spacing: 0.1rem;
+}
+
 /* grid film*/
 
 
-
 .grid-container{
-  padding: 5rem;
+  padding-top: 3vh;
+  padding-left: 5vw; 
+  padding-right: 5vw;
+  padding-bottom: 5vh;
 }
 .film{
 
@@ -86,13 +127,6 @@ transform: scale(1.1);
 }
 
 
-/*    Buttons   */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 8rem;
-  font-weight: bold;
-}
 
 .close:hover,
 .close:focus {
@@ -101,27 +135,77 @@ transform: scale(1.1);
   cursor: pointer;
 }
 
+/* ----------- Modal overlay code ------------- */
 
-/*    Modal overlay for cards   */
-.modal{
-  display: none;
-  background-color: rgba(0, 0, 0, 0.9);
+
+.modal {
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
   right: 0;
-  bottom:0;
-  z-index: 4;
+  display: none;
+  overflow: none;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
 }
 
-.modal-content{
+.modal-window {
+  display: flex;
+  position: relative;
+  background-color: #FFFFFF;
+  width: 50%;
   margin: 10% auto;
-  padding: 20px;
+  padding: 1rem;
 }
+
+.video-description{
+  margin: 0 ;/* Need a way to split video and description equally without making video shrink horizontally */
+  /* why is the video shrinking horizontally */
+}
+
+.modal-window.small {
+  width: 75%;
+}
+
+.modal-window.large {
+  width: 75%;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgba(0,0,0,0.3);
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  cursor: pointer;
+}
+
+.open {
+  display: block;
+}
+
+
+button.modalBtn {float: right; padding: 15px; margin-top: 2rem; margin-left: 2rem; font-size: 12px; background: indianred; color: #FFF; border: none;}
+      .subheading { font-style: italic }
+      
 
 /*video element style*/
+.video-js{
+  left:0;
+  top:25%;
+  width: 50rem;}
 
-.video-js{left:30%;top:25%;width: 50rem;}
 
 /* Functions for if the screen is less than 992 px*/
 
@@ -130,9 +214,10 @@ transform: scale(1.1);
   /* slideshow size container*/
 
   .swiper{
-    width: 45rem;
-    height: 30rem;
+    width: 110vw;
+    height: 45vh;
   }
+
   
   .film{
     display: grid;
@@ -149,14 +234,12 @@ transform: scale(1.1);
 /* Functions for if the screen is less than 600 px*/
 
 @media screen and (max-width: 600px) {
-
-  /* slideshow size container*/
-
-  .swiper{
-    width: 30rem;
-    height: 20rem;
-  }
   
+  .swiper{
+    width: 110vw;
+    height: 35vh;
+  }
+
   /* Grid film */
 
   .grid-container{

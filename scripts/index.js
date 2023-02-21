@@ -1,51 +1,50 @@
 
+// Modal code
 
 
-//Modal video overlay
+document.addEventListener('click', function (e) {
+    e = e || window.event;
+    var target = e.target || e.srcElement;
+    //array of videos
+    var myPlayer = [videojs("vid1"),
+                    videojs("vid2"),
+                    videojs("vid3"),
+                    videojs("vid4")];
 
-document.addEventListener('DOMContentLoaded', () => {
-    var modal = document.getElementsByClassName('modal');
+    //video js options loop for array access
+    for (let i = 0; i < myPlayer.length; i++){
 
-    var openBtn = document.getElementsByClassName("vidBtn");
-
-    var span = document.getElementsByClassName("close");
-
-//Open modal code
-
-openBtn[0].onclick = function() {
-    modal[0].style.display = "block";
-}
-
-openBtn[1].onclick = function() {
-    modal[1].style.display = "block";
-}
-
-openBtn[2].onclick = function() {
-    modal[2].style.display = "block";
-}
-
-//Close modal code
-span[0].onclick = function() {
-    modal[0].style.display = 'none';
-}
-
-span[1].onclick = function() {
-    modal[1].style.display = 'none';
-}
-
-span[2].onclick = function() {
-    modal[2].style.display = 'none';
-}
-/*
-window.onclick = function(event) {
-    console.log(event.target);
-    if (event.target == modal) {
-        modal[0,1,2].style.display = "none";
+        //make all videos responsive to resolution
+        myPlayer[i].aspectRatio('16:9');
+        myPlayer[i].fluid(true);
+        myPlayer[i].volume(0.5);
         
-    }
-} */
+        }
 
-});
+    if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') {
+        if (target.hasAttribute('data-target')) {
+            var m_ID = target.getAttribute('data-target');
+            document.getElementById(m_ID).classList.add('open');
+            e.preventDefault();
+
+            
+        }
+    }
+
+    // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+    if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') || target.classList.contains('modal')) {
+        var modal = document.querySelector('[class="modal open"]');
+        modal.classList.remove('open');
+        e.preventDefault();
+
+        //make video pause upon modal close
+        for (let i = 0; i < myPlayer.length; i++){
+        myPlayer[i].pause();               
+        }
+
+    }
+
+}, false);
 
 const menu = document.getElementById("topbar");
 
@@ -53,10 +52,3 @@ function fansyFunction(){
 
 document.getElementById("menu").classList.toggle("show")
 }
-
-
-
-
-
-
-   

@@ -34,7 +34,8 @@ header {
     overflow: hidden;
     background-color: var(--top-bot-color);
     margin: auto;
-    padding: 3vh;
+    padding: 1vh;
+
 }
 .topbarLink{
 color: var(--small-text-color);

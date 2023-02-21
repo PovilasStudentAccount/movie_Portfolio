@@ -42,15 +42,11 @@
       <menu class="topbar">
         <section class="menu" id="menu">
 
-          <a class="top-logo">Pile of Ideas</a>
-          <a onclick="fansyFunction()" class="mobile-Menu">Menu</a>
-          <a id="topBarLinkSD" class="topbarLink" href="./index.html">Movies</a>
-          <a id="topBarLinkSD" class="topbarLink" href="./pages/prod.html">Production</a>
-          <a id="topBarLinkSD" class="topbarLink" href="./pages/about.html">About Us</a>
-
-        </section>
-      </menu>
-    </header>
+        <a class="topbarLink" href="./index.html">Movies</a>
+        <a class="topbarLink" href="./pages/prod.html">Production</a>
+        <a class="topbarLink" href="./pages/about.html">About Us</a>
+      </section>
+    </menu>
 
     <!-- Here is where the slideshow is-->
 
@@ -61,9 +57,9 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img src="./images/mMyers.webp" /></div>
-            <div class="swiper-slide"><img src="./images/mMyersCloseUp.Webp" /></div>
-            <div class="swiper-slide"><img src="./images/halloweenMovie.Webp" /></div>
+            <div class="swiper-slide"><img src="./images/foggy-winter-morning.jpg"/></div>
+            <div class="swiper-slide"><img src="./images/mMyersCloseUp.Webp" loading="lazy"/></div>
+            <div class="swiper-slide"><img src="./images/halloweenMovie.Webp" loading="lazy"/></div>
 
 
           </div>
@@ -77,83 +73,145 @@
         </div>
       </div>
 
-
+<div class="gridTitle">
+  Released movies
+</div>
 
 
       <!--Border film grid-->
 
       <div class="grid-container">
-        <div class="film" id="arrayGrid">
-          <button id="vidBtn" class="vidBtn"> <img class="film-img" src="/images/mMyers.webp"> </button>
-          <button id="vidBtn" class="vidBtn"> <img class="film-img" src="/images/mMyers.webp"> </button>
-          <button id="vidBtn" class="vidBtn"> <img class="film-img" src="/images/mMyers.webp"> </button>
-          <button> <img class="film-img" src="/images/mMyers.webp"> </button>
-          <button> <img class="film-img" src="/images/mMyers.webp"> </button>
+      <div class="film" id="arrayGrid">
+        <button> <img src="./images/mMyers.webp" alt="" class="film-img" data-target="simpleModal_1" data-toggle="modal" loading="lazy"></button>
+        <button> <img src="./images/mMyers.webp" alt="" class="film-img" data-target="simpleModal_2" data-toggle="modal" loading="lazy"></button>
+        <button> <img src="./images/mMyers.webp" alt="" class="film-img" data-target="simpleModal_3" data-toggle="modal" loading="lazy"></button>
+        <button> <img src="./images/mMyers.webp" alt="" class="film-img" data-target="simpleModal_4" data-toggle="modal" loading="lazy"></button>
+        
+      </div>
 
+    <!-- Modal Section of web page code -->
+    
+   
+    <!--new modal code here-->
+    
+    
+    <div id="simpleModal_1" class="modal">
+      
+     <button data-dismiss="modal" class="modalBtn">Close</button>
+     <div class="modal-window">
+    
+          <video class="video-js vjs-big-play-centered lazyload"
+            id="vid1"
+            controls
+            preload="auto"
+            height="600px"
+            poster="images/portada_peter-grill-2.webp"
+            data-setup="{}"
+          >
+            <source src="videos/Pootis_status.mp4" type="video/mp4" />
+            <source src="MY_VIDEO.webm" type="video/webm" />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+              >
+            </p>
+          </video>
         </div>
-
-        <!-- Modal Section of web page code -->
-
-        <!-- Modal 1-->
-        <div id="modal1" class="modal">
-
-          <!-- Modal 1 content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <video id="vid1" class="video-js" controls preload="auto" height="600px" poster="images/mMyers.webp"
-              data-setup="{}">
-              <source src="videos/Pootis_status.mp4" type="video/mp4" />
-              <source src="MY_VIDEO.webm" type="video/webm" />
-              <p class="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a
-                web browser that
-                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-
-          </div>
-        </div>
-
-        <!-- Modal 2 -->
-        <div id="modal2" class="modal">
-
-          <!-- Modal 2 content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <video id="vid2" class="video-js" controls preload="auto" height="600px"
-              poster="images/Suit-For-Parrots.webp" data-setup="{}">
-              <source src="videos/red_bird.mp4" type="video/mp4" />
-              <source src="MY_VIDEO.webm" type="video/webm" />
-              <p class="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a
-                web browser that
-                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-          </div>
-        </div>
-
-        <!-- Modal 3 -->
-        <div id="modal3" class="modal">
-
-          <!-- Modal 3 content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <video id="vid3" class="video-js" controls preload="auto" poster="images/povilas.webp" data-setup="{}">
-              <source src="videos/real-kiryu.mp4" type="video/mp4" />
-              <source src="MY_VIDEO.webm" type="video/webm" />
-              <p class="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a
-                web browser that
-                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-          </div>
-        </div>
-
-        <!-- End of modal code -->
+      
+  </div>
 
 
+    <div id="simpleModal_2" class="modal">
+      
+      <button data-dismiss="modal" class="modalBtn">Close</button>
+      <div class="modal-window">
+
+          <video-js class="vjs-big-play-centered lazyload"
+            id="vid2"
+            controls
+            preload="auto"
+            height="600px"
+            poster="images/Suit-For-Parrots.webp"
+            data-setup="{}"
+            >
+            <source src="videos/red_bird.mp4" type="video/mp4" />
+            <source src="MY_VIDEO.webm" type="video/webm" />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+              >
+            </p>
+          </video-js>
+
+      </div>
+  </div>
+
+
+    <div id="simpleModal_3" class="modal">
+    
+      <button data-dismiss="modal" class="modalBtn">Close</button>
+      <div class="modal-window">
+
+        <video-js class="vjs-big-play-centered lazyload"
+          id="vid3"
+          controls
+          preload="auto"
+          height="600px"
+          poster="images/povilas.webp"
+          data-setup="{}"
+          >
+          <source src="videos/real-kiryu.mp4" type="video/mp4" />
+          <source src="MY_VIDEO.webm" type="video/webm" />
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank"
+              >supports HTML5 video</a
+            >
+          </p>
+        </video-js>
+        <div class="video-description">Average drunk Kiryu evening</div>
+
+    </div>
+</div>
+
+
+<div id="simpleModal_4" class="modal">
+    
+  <button data-dismiss="modal" class="modalBtn">Close</button>
+  <div class="modal-window">
+
+    <video-js class="vjs-big-play-centered lazyload"
+      id="vid4"
+      controls
+      preload="auto"
+      height="600px"
+      poster="images/povilas.webp"
+      data-setup="{}"
+      >
+      <source src="videos/fridaynight.mp4" type="video/mp4" />
+      <source src="MY_VIDEO.webm" type="video/webm" />
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+          >supports HTML5 video</a
+        >
+      </p>
+    </video-js>
+
+<div class="video-description">Kiryu and Majima dance at the arcade</div>
+
+</div>
+</div>
+  
+    <!-- End of modal code -->
+      
+    
 
     </main>
 
@@ -203,6 +261,20 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+<script 
+src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" 
+integrity="sha512-DmOVcBnk6Y/2QFASr6U/f27rCvZ6oz0Z+tHJw0/CxGxJ42a/fnYFkTfHc+XaSZlPjJtrZbx2n4w4xtdx+MkSlg==" 
+crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+
+
+<script 
+src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" 
+integrity="sha512-DmOVcBnk6Y/2QFASr6U/f27rCvZ6oz0Z+tHJw0/CxGxJ42a/fnYFkTfHc+XaSZlPjJtrZbx2n4w4xtdx+MkSlg==" 
+crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+
 
 <!--This script needs to be in the html file, otherwise it does not work.-->
 
