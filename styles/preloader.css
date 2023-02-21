@@ -33,7 +33,7 @@
 .spinner {
     width: 200px;
     height: 200px;
-    background: linear-gradient(90deg, var(--main-bg-color), var(--element-color));
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
   }
   
 @keyframes rotate {

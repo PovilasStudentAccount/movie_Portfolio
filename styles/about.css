@@ -6,11 +6,11 @@
     
         box-sizing: border-box;
         
-        background-color: var(--main-bg-color);
+        background-color: var(--primary-color);
         background-repeat: no-repeat;
        
     
-    background-color: var(--main-bg-color);
+    background-color: var(--primary-color);
     
 }
 
@@ -18,12 +18,12 @@
 
 .wallpaper {
 
-    background-color: var(--main-bg-color);
+    background-color: var(--primary-color);
     background-image: url("https://transparenttextures.com/patterns/batthern.png");
 }
 
 h1 {
-    color: var(--main-text-color);
+    color: var(--text-color);
 
 }
 
@@ -47,7 +47,7 @@ h1 {
   align-items: center;
   max-width: 80rem;
   align-content: space-between;
-  background-color: var(--element-color);
+  background-color: var(--secondary-color);
 }
 .left,.right {
 
