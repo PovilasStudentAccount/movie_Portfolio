@@ -1,6 +1,6 @@
 
 .wrapper{
-  background-color: var(--main-bg-color);
+  background-color: var(--primary-color);
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
 
 .container{
   width: 100%;
-  background: var(--element-color);
+  background: var(--secondary-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,7 +65,7 @@ transform: scale(1.7);
 }
 
 .swiper .swiper-pagination-bullet-active{
-  background: var(--main-text-color);
+  background: var(--text-color);
 }
 
 /* Grid title */
@@ -86,6 +86,12 @@ transform: scale(1.7);
   color: #B7C8D6;
   margin-block-start: 2rem;
   letter-spacing: 0.1rem;
+/* make non clickable */
+-webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+
 }
 
 /* grid film*/
