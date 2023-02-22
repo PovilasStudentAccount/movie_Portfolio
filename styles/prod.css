@@ -2,7 +2,7 @@
 
 .wrapper{
     
-    background-color: var(--main-bg-color);
+    background-color: var(--primary-color);
     background-repeat: no-repeat;
 
 }
@@ -10,9 +10,9 @@
 .wallPaper {
     background-color: #040467;
 
-    border-top: 0.5rem solid var(--main-bg-color);
+    border-top: 0.5rem solid var(--primary-color);
 
-background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--main-bg-color) 15rem ), repeating-linear-gradient( var(--main-bg-color), var(--element-color) );
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--primary-color) 15rem ), repeating-linear-gradient( var(--primary-color), var(--secondary-color) );
 }
 
 /* This code seperates text and image using flex box */
@@ -43,7 +43,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(
     
     font-size: 2rem;
 
-    background-color: var(--element-color);
+    background-color: var(--secondary-color);
 
     display: flex;
     flex-direction: column;
