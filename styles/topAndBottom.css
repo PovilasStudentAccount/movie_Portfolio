@@ -39,7 +39,7 @@ header {
 }
 .topbarLink{
 color: var(--small-text-color);
-
+font-size: x-large;
 margin: auto;
 padding: 8px;
 position: relative;

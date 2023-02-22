@@ -9,6 +9,17 @@
 }
 
 :root{
+
+    --primary-color: #125077;
+    --secondary-color: #6A7FDB;
+    --text-color:#C7EFCF;
+    --small-text-color: #94dcf5;
+    --top-bot-color: #0c334f;
+    --button-color: white;
+  
+  }
+
+/* :root{
   --primary-color: #7abcea;
   --secondary-color: #a6d2fe;
   --text-color:#00171f;
@@ -30,12 +41,7 @@
     --button-color: white;
   
   }
-  
-h1 {
-  font-family: 'mighaexpanded';
-}
-
-  }
+  */
 
   h1,h2,h3 {
     color: var(--text-color);
@@ -44,8 +50,9 @@ h1 {
   
   a.title{
     font-family: 'League Spartan';
-    font-size:2rem;
+    font-size:2.2rem;
     color: var(--text-color);
+    margin-top: 0.2rem;
   }
   a.top-logo:hover::before, a.mobile-Menu:hover::before{
     transform-origin: left;

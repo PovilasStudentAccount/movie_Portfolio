@@ -25,7 +25,7 @@ h1 {
 .swiper{
 
   width: 100vw;
-  height: 50vh;
+  height: 65vh;
 
 }
 
@@ -74,6 +74,9 @@ transform: scale(1.7);
   color: var(--text-color);
   margin-block-start: 2rem;
   letter-spacing: 0.1rem;
+  background: var(--primary-color);
+  padding-top: 2rem;
+  margin-top: 0;
 /* make non clickable */
 -webkit-user-select: none; /* Safari */        
 -moz-user-select: none; /* Firefox */
@@ -84,13 +87,23 @@ user-select: none; /* Standard */
 
 /* grid film*/
 
-
 .grid-container{
+  background: rgb(18,80,119);
+  background: linear-gradient(180deg, rgba(18,80,119,1) 43%, rgba(5,74,204,1) 83%, rgba(5,147,139,1) 100%); ;
   padding-top: 3vh;
   padding-left: 5vw; 
   padding-right: 5vw;
   padding-bottom: 5vh;
 }
+
+.gridCardTitle
+{
+  padding-top: 3vh;
+  padding-left: 5vw; 
+  padding-right: 5vw;
+  padding-bottom: 5vh;
+}
+
 .film{
 
 
