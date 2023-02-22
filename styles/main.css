@@ -24,20 +24,21 @@ h1 {
 
 .swiper{
 
-  width: 110vw;
-  height: 50vh;
+  width: 100vw;
+  height: 70vh;
 
 
 }
 
+
+
 .swiper-slide img{
 
-  width: auto; 
-  max-width:120%;
- 
+  width: 100vw; 
+  height: 70vmin;
+  object-fit: cover;
+  object-position: center;
 
-
-  height:100%;
   display: block;
     margin-left: auto;
     margin-right: auto;
