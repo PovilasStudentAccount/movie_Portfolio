@@ -89,7 +89,7 @@ user-select: none; /* Standard */
 
 .grid-container{
   background: rgb(18,80,119);
-  background: linear-gradient(180deg, rgba(18,80,119,1) 43%, rgb(14, 77, 194) 90%, rgb(3, 118, 122) 100%); ;
+  background: var(--primary-color); ;
   padding-top: 3vh;
   padding-left: 5vw; 
   padding-right: 5vw;

@@ -10,11 +10,11 @@
 
 :root{
 
-    --primary-color: #125077;
-    --secondary-color: #6A7FDB;
-    --text-color:#C7EFCF;
-    --small-text-color: #94dcf5;
-    --top-bot-color: #0c334f;
+    --primary-color: #374A67;
+    --secondary-color: #616283;
+    --text-color:#52FFB8;
+    --small-text-color: #00C2D1;
+    --top-bot-color: #0E1116;
     --button-color: white;
   
   }
@@ -61,6 +61,7 @@
 
   p {
     color: var(--small-text-color);
+    font-family: sans-serif;
   }
 
   
