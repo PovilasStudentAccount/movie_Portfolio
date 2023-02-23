@@ -89,7 +89,7 @@ user-select: none; /* Standard */
 
 .grid-container{
   background: rgb(18,80,119);
-  background: linear-gradient(180deg, rgba(18,80,119,1) 43%, rgba(5,74,204,1) 83%, rgba(5,147,139,1) 100%); ;
+  background: linear-gradient(180deg, rgba(18,80,119,1) 43%, rgb(14, 77, 194) 90%, rgb(3, 118, 122) 100%); ;
   padding-top: 3vh;
   padding-left: 5vw; 
   padding-right: 5vw;
@@ -98,10 +98,10 @@ user-select: none; /* Standard */
 
 .gridCardTitle
 {
-  padding-top: 3vh;
-  padding-left: 5vw; 
-  padding-right: 5vw;
-  padding-bottom: 5vh;
+  display: flex;
+  margin-left: 2vw;
+  font-size: x-large;
+  margin-top: 0.8vh;
 }
 
 .film{
@@ -114,7 +114,7 @@ user-select: none; /* Standard */
 }
 
 /*grid button style*/
-.film button{background: none;border: none;}
+.film button{background: none;border: none; height: fit-content;}
 
 .film-img{
   border: 0.1rem;
