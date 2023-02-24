@@ -4,50 +4,36 @@ header {
   top: 0;
   z-index: 3;
 }
-
-
-
 .menu {
-
   background-color: var(--bg-menuColor);
   color: var(--text-color1);
-  padding: .5rem;
+  padding: 0.5rem;
   width: 100%;
   max-width: 100%;
   overflow: hidden;
   display: flex;
-
-
-
 }
-
-/* Link hover underline effect */
-
+/*      Link hover underline effect     */
 .topbar {
-
-    position: sticky;
-    flex-wrap: wrap;
-
-    top: 0;
-
-    width: auto;
-    overflow: hidden;
-    background-color: var(--top-bot-color);
-    margin: auto;
-    padding: 1vh;
-
+  position: sticky;
+  flex-wrap: wrap;
+  top: 0;
+  width: auto;
+  overflow: hidden;
+  background-color: var(--top-bot-color);
+  margin: auto;
+  padding: 1vh;
 }
-.topbarLink{
-color: var(--small-text-color);
-font-size: x-large;
-margin: auto;
-padding: 8px;
-position: relative;
-text-decoration: none;
+.topbarLink {
+  color: var(--small-text-color);
+  font-size: x-large;
+  margin: auto;
+  padding: 8px;
+  position: relative;
+  text-decoration: none;
 }
-
-.topbarLink::before{
-  content: '';
+.topbarLink::before {
+  content: "";
   position: absolute;
   width: 100%;
   height: 4px;
@@ -57,95 +43,62 @@ text-decoration: none;
   left: 0;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform .3s ease-in-out;
-  }
-  .topbarLink:hover::before{
-    transform-origin: left;
-    transform: scaleX(1);
-  }
-
-
-
-
-  /*The text at the bottom css*/ 
-
-  .bottomText{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-    padding-top: 2.5rem; 
-    padding-bottom: 2.5rem;
-    padding-left:2rem;
-    padding-right:2rem;
-
-
-    overflow: hidden;
-
-    color: var(--small-text-color);
-    font-size: 1rem;
-
-    background-color: var(--top-bot-color);
-
-
-  }
-
-  .botDirection2{
-
-   
-    margin: 1%;
-    width: 100%;
-    flex-direction: column;
- 
+  transition: transform 0.3s ease-in-out;
 }
-
-.spacing{
-
-margin-top: 5px;
-margin-bottom: 5px;
-
+.topbarLink:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
-/* Hides Mobile menu until screen width is below 600px*/
-
-@media screen and (min-width: 600px){
-  .mobile-Menu{
+/*    The text at the bottom css    */
+.bottomText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  overflow: hidden;
+  color: var(--small-text-color);
+  font-size: 1rem;
+  background-color: var(--top-bot-color);
+}
+.botDirection2 {
+  margin: 1%;
+  width: 100%;
+  flex-direction: column;
+}
+.spacing {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/*  Hides Mobile menu until screen width is below 600px  */
+@media screen and (min-width: 600px) {
+  .mobile-Menu {
     display: none !important;
   }
 }
-
 @media screen and (max-width: 600px) {
-
   .menu {
-      
     display: flex;
     flex-direction: column;
-    padding: .2rem;
+    padding: 0.2rem;
     width: 100%;
     max-width: 80rem;
-
   }
-/* Hides the prior logo for replacement of the new menu*/
+  /* Hides the prior logo for replacement of the new menu*/
   .top-logo {
     display: none !important;
   }
-
-  .topbarLink{
-    display:none;
+  .topbarLink {
+    display: none;
   }
-  
   .menu.show a {
     display: block;
     width: 100%;
     flex-direction: column;
-    
-    
   }
-    
-  .bottomText{
-
+  .bottomText {
     flex-direction: column;
-  
   }
-    
 }

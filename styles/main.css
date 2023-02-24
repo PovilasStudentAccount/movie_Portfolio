@@ -1,17 +1,11 @@
-
-.wrapper{
+.wrapper {
   background-color: var(--primary-color);
 }
-
 h1 {
-  font-family: 'League Spartan';
+  font-family: "League Spartan";
 }
-
-
-
-/*The slideshow*/
-
-.container{
+/*    The slideshow   */
+.container {
   width: 100%;
   background: var(--secondary-color);
   display: flex;
@@ -19,57 +13,38 @@ h1 {
   justify-content: center;
   overflow: hidden;
 }
-
-/* slideshow size container*/
-
-.swiper{
-
+/*    Slideshow size container    */
+.swiper {
   width: 100vw;
-  height: 65vh;
-
 }
-
-.swiper-slide img{
-
-  width: 100vw; 
+.swiper-slide img {
+  width: 100vw;
   height: 70vmin;
   object-fit: cover;
   object-position: center;
-
   display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-  
-
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
-/* slideshow slide buttons*/
-
-.swiper .swiper-button-next, .swiper .swiper-button-prev{
+/*  Slideshow slide buttons   */
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
   color: var(--button-color);
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   transform: scale(1);
   margin-inline: 4rem;
-
 }
-
-/* slideshow slide buttons expanding when hovered*/
-
-.swiper .swiper-button-next:hover, .swiper .swiper-button-prev:hover{
-
-transform: scale(1.7);
+.swiper .swiper-button-next:hover,
+.swiper .swiper-button-prev:hover {
+  transform: scale(1.7);
 }
-
-.swiper .swiper-pagination-bullet-active{
+.swiper .swiper-pagination-bullet-active {
   background: var(--text-color);
 }
-
-/* Grid title */
+/*  Title above the cards grid   */
 .gridTitle {
   text-align: center;
-  font-family: 'League Spartan';
+  font-family: "League Spartan";
   font-size: 3.5rem;
   color: var(--text-color);
   margin-block-start: 2rem;
@@ -77,74 +52,54 @@ transform: scale(1.7);
   background: var(--primary-color);
   padding-top: 2rem;
   margin-top: 0;
-/* make non clickable */
--webkit-user-select: none; /* Safari */        
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* IE10+/Edge */
-user-select: none; /* Standard */
-
+  user-select: none;
 }
-
-/* grid film*/
-
-.grid-container{
-  background: rgb(18,80,119);
-  background: var(--primary-color); ;
+/*  Grid Films  */
+.grid-container {
+  background: #125077;
+  background: linear-gradient(to bottom, #374a67, #0e1116);
   padding-top: 3vh;
-  padding-left: 5vw; 
+  padding-left: 5vw;
   padding-right: 5vw;
   padding-bottom: 5vh;
 }
-
-.gridCardTitle
-{
+.gridCardTitle {
   display: flex;
   margin-left: 2vw;
   font-size: x-large;
   margin-top: 0.8vh;
 }
-
-.film{
-
-
+.film {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   row-gap: 5vh;
-
 }
-
-/*grid button style*/
-.film button{background: none;border: none; height: fit-content;}
-
-.film-img{
+/*   grid button style   */
+.film button {
+  background: 0 0;
+  border: none;
+  height: fit-content;
+}
+.film-img {
   border: 0.1rem;
   border-radius: 0.5rem;
   margin: 1rem;
-  box-shadow: 0px 0.5rem 7px rgba(0, 0, 0, 0.379);
-
+  box-shadow: 0 0.35rem 7px rgba(0, 0, 0, 0.379);
   width: 90%;
   height: 90%;
-
   transform: scale(1);
-
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
-.film-img:hover{
-transform: scale(1.1);
+.film-img:hover {
+  transform: scale(1.1);
 }
-
-
-
-.close:hover,
-.close:focus {
-  color:black;
+.close:focus,
+.close:hover {
+  color: #000;
   text-decoration: none;
   cursor: pointer;
 }
-
 /* ----------- Modal overlay code ------------- */
-
-
 .modal {
   position: fixed;
   top: 0;
@@ -153,115 +108,100 @@ transform: scale(1.1);
   right: 0;
   display: none;
   overflow: none;
-  background-color: #000000;
+  background-color: #000;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
 }
-
 .modal-window {
-  display: flex;
   position: relative;
-  background-color: #FFFFFF;
-  width: 50%;
-  margin: 10% auto;
-  padding: 1rem;
+  background-color: var(--primary-color);
+  width: 55%;
+  margin: 8% auto;
+  padding: 2.5rem;
 }
-
-.video-description{
-  margin: 0 ;/* Need a way to split video and description equally without making video shrink horizontally */
-  /* why is the video shrinking horizontally */
+.flex-modal {
+  display: flex;
 }
-
+.modal-video-description {
+  position: relative;
+  background-color: #fff;
+  margin: 8% auto;
+  padding: 2.5rem;
+}
 .modal-window.small {
   width: 75%;
 }
-
 .modal-window.large {
   width: 75%;
 }
-
 .close {
   position: absolute;
   top: 0;
   right: 0;
-  color: rgba(0,0,0,0.3);
+  color: rgba(0, 0, 0, 0.3);
   height: 30px;
   width: 30px;
   font-size: 30px;
   line-height: 30px;
   text-align: center;
 }
-
-.close:hover,
-.close:focus {
-  color: #000000;
+.close:focus,
+.close:hover {
+  color: #000;
   cursor: pointer;
 }
-
 .open {
   display: block;
 }
-
-
-button.modalBtn {float: right; padding: 15px; margin-top: 2rem; margin-left: 2rem; font-size: 12px; background: indianred; color: #FFF; border: none;}
-      .subheading { font-style: italic }
-      
-
-/*video element style*/
-.video-js{
-  left:0;
-  top:25%;
-  width: 50rem;}
-
-
-/* Functions for if the screen is less than 992 px*/
-
+button.modalBtn {
+  float: right;
+  padding: 15px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-size: 12px;
+  background: #cd5c5c;
+  color: #fff;
+  border: none;
+}
+.subheading {
+  font-style: italic;
+}
+/*      video element style     */
+.video-js {
+  left: 0;
+  margin: auto;
+  width: 50rem;
+}
+/*   Responsive design section    */
 @media screen and (max-width: 992px) {
-
-  /* slideshow size container*/
-
-  .swiper{
+  .swiper {
     width: 110vw;
     height: 45vh;
   }
-
-  
-  .film{
+  .film {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-   }
-
+  }
   .video-js {
-    width:20rem;
+    width: 20rem;
     resize: horizontal;
   }
-
 }
-
-/* Functions for if the screen is less than 600 px*/
-
+/*     Mobile size design   */
 @media screen and (max-width: 600px) {
-  
-  .swiper{
+  .swiper {
     width: 110vw;
     height: 35vh;
   }
-
-  /* Grid film */
-
-  .grid-container{
+  .grid-container {
     padding: 2rem;
   }
-
-  .film{
+  .film {
     display: grid;
     grid-template-columns: 100%;
   }
-
   .video-js {
-    width:10rem;
+    width: 10rem;
     resize: horizontal;
   }
-
-
 }

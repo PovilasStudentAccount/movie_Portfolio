@@ -1,68 +1,44 @@
-@import "../fonts/league-spartan-master/webfonts/stylesheet.css";
-
-/* the main colors for the website */
-
-*{
-  margin:0px;
-  padding:0px;
+@font-face {
+  font-family: "League Spartan";
+  src: url(../fonts/league-spartan-master/webfonts/leaguespartan-bold.eot);
+  src: url(../fonts/league-spartan-master/webfonts/leaguespartan-bold.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/league-spartan-master/webfonts/leaguespartan-bold.woff2) format("woff2"),
+    url(../fonts/league-spartan-master/webfonts/leaguespartan-bold.woff) format("woff"),
+    url(../fonts/league-spartan-master/webfonts/leaguespartan-bold.ttf) format("truetype"),
+    url(../fonts/league-spartan-master/webfonts/leaguespartan-bold.svg#league_spartanbold) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-
-:root{
-
-    --primary-color: #374A67;
-    --secondary-color: #616283;
-    --text-color:#52FFB8;
-    --small-text-color: #00C2D1;
-    --top-bot-color: #0E1116;
-    --button-color: white;
-  
-  }
-
-/* :root{
-  --primary-color: #7abcea;
-  --secondary-color: #a6d2fe;
-  --text-color:#00171f;
-  --small-text-color: #00171f;
-  --top-bot-color: #1b6ba3;
+:root {
+  --primary-color: #374a67;
+  --secondary-color: #616283;
+  --text-color: #52ffb8;
+  --small-text-color: #00c2d1;
+  --top-bot-color: #0e1116;
   --button-color: white;
-  
-  }
-  
-  @media (prefers-color-scheme: dark){
-  
-  :root{
-
-    --primary-color: #013454;
-    --secondary-color: #1e4a78;
-    --text-color:#8cceea;
-    --small-text-color: #74d1ef;
-    --top-bot-color: #1b6ba3;
-    --button-color: white;
-  
-  }
-  */
-
-  h1,h2,h3 {
-    color: var(--text-color);
-
-  }
-  
-  a.title{
-    font-family: 'League Spartan';
-    font-size:2.2rem;
-    color: var(--text-color);
-    margin-top: 0.2rem;
-  }
-  a.top-logo:hover::before, a.mobile-Menu:hover::before{
-    transform-origin: left;
-    transform: scaleX(0);
-  }
-
-  p {
-    color: var(--small-text-color);
-    font-family: sans-serif;
-  }
-
-  
-  
+}
+h1,
+h2,
+h3 {
+  color: var(--text-color);
+}
+a.title {
+  font-family: "League Spartan";
+  font-size: 2.2rem;
+  color: var(--text-color);
+  margin-top: 0.2rem;
+}
+a.mobile-Menu:hover::before,
+a.top-logo:hover::before {
+  transform-origin: left;
+  transform: scaleX(0);
+}
+p {
+  color: var(--small-text-color);
+  font-family: sans-serif;
+}

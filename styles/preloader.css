@@ -1,55 +1,49 @@
-
-
 /* preloader itself*/
-#preloader{
-    background: #161616;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-  }
-
+#preloader {
+  background: #161616;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
 .spinner-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .spinnerWrap{
-    display: flex;
-    justify-content: center;
-    transform: translateY(45vh)
-  }
-  
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 10px;
+}
+.spinnerWrap {
+  display: flex;
+  justify-content: center;
+  transform: translateY(45vh);
+}
 .spinner-container > div {
-    width: 100%;
-    aspect-ratio: 1/1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .spinner {
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-  }
-  
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
 @keyframes rotate {
-    to {
-      transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
   }
-  
-/*Spinner*/
+}
+/*  Spinner */
 #spinner4 {
   border-radius: 50%;
   position: relative;
   animation: rotate 2s linear infinite;
-  
 }
-
 #spinner4::before {
   content: "";
   position: absolute;
@@ -63,10 +57,8 @@
 }
 /* end of spinner */
 
-/*Intro CSS*/
-
-
-.intro{
+/*  Intro CSS   */
+.intro {
   position: fixed;
   z-index: 9;
   left: 0;
@@ -76,31 +68,26 @@
   background-color: #161616;
   transition: 1s;
 }
-
-.logo-header{
+.logo-header {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #ffffff;
+  color: #fff;
 }
-
-.logo{
+.logo {
   position: relative;
   display: inline-block;
   bottom: -20px;
   opacity: 0;
 }
-
-.logo.active{
-  bottom:0;
+.logo.active {
+  bottom: 0;
   opacity: 1;
   transition: ease-in-out 0.5s;
 }
-
-.logo.fade{
+.logo.fade {
   bottom: 150px;
   opacity: 0;
   transition: ease-in-out 0.5s;
 }
-/* End of intro css */

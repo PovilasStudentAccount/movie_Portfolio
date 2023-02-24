@@ -1,46 +1,25 @@
-
-
-/* the main colors for the website */
-
-.wrapper{
-    
-        box-sizing: border-box;
-        
-        background-color: var(--primary-color);
-        background-repeat: no-repeat;
-       
-    
-    background-color: var(--primary-color);
-    
+.wrapper {
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  background-repeat: no-repeat;
+  background-color: var(--primary-color);
 }
-
-/* Background pattern*/
-
 .wallpaper {
-
-    background-color: var(--primary-color);
-    background-image: url("https://transparenttextures.com/patterns/batthern.png");
+  background-color: var(--primary-color);
+  background-image: url(https://transparenttextures.com/patterns/batthern.png);
 }
-
 h1 {
-    color: var(--text-color);
-
+  color: var(--text-color);
 }
-
-
-/* preloader */
-#preloader{
+#preloader {
   background: #000;
   height: 100vh;
   width: 100%;
   position: fixed;
   z-index: 100;
 }
-
-
-/* This code seperates text and image using flex box into two halves */
 .CreditNImg {
-    font-size: 2rem;
+  font-size: 2rem;
   display: flex;
   overflow: hidden;
   margin: auto;
@@ -49,45 +28,26 @@ h1 {
   align-content: space-between;
   background-color: var(--secondary-color);
 }
-.left,.right {
-
-    padding: 2rem;
-
-    flex-grow: 1;
-    flex: 50%;
-
-
+.left,
+.right {
+  padding: 2rem;
+  flex-grow: 1;
+  flex: 50%;
 }
-
-/* Adds background shadows to the img files*/
-
 .shadow {
-
-    border: 0.5vh solid var(--small-text-color);
+  border: 0.5vh solid var(--small-text-color);
   border-radius: 2vh;
-  padding: 0px;
+  padding: 0;
   box-shadow: 0.5vh 0.5vh 5px rgba(0, 0, 0, 0.379);
-
 }
-
-/* A conainer for text used in these parts*/
-
 .textContainer {
-    
-    font-size: 2rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    margin: auto;
-    padding: 4rem;
-
-
-    padding-top: 7.5rem; 
-    padding-bottom: 7.5rem;
-
-
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 4rem;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
 }
-
