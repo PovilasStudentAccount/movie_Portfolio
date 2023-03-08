@@ -119,15 +119,6 @@ h1 {
   margin: 8% auto;
   padding: 2.5rem;
 }
-.flex-modal {
-  display: flex;
-}
-.modal-video-description {
-  position: relative;
-  background-color: #fff;
-  margin: 8% auto;
-  padding: 2.5rem;
-}
 .modal-window.small {
   width: 75%;
 }
