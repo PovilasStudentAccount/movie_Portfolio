@@ -27,7 +27,7 @@ h2,
 h3 {
   color: var(--text-color);
 }
-a.title {
+a.top-logo, a.mobile-Menu {
   font-family: "League Spartan";
   font-size: 2.2rem;
   color: var(--text-color);
