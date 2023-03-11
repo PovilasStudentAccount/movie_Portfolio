@@ -1,8 +1,11 @@
 .wrapper {
   background-color: var(--primary-color);
 }
-h1 {
+h1, p.spacing {
   font-family: "League Spartan";
+}
+p.spacing {
+  font-size: x-large;
 }
 /*    The slideshow   */
 .container {
