@@ -72,6 +72,9 @@ header {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+.footerLink{
+  color: inherit;
+}
 /*  Hides Mobile menu until screen width is below 600px  */
 @media screen and (min-width: 600px) {
   .mobile-Menu {
